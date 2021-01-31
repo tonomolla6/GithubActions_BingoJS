@@ -26,7 +26,7 @@ const nodemailer = __nccwpck_require__(2350);
 
 const user = core.getInput("user");
 const pass = core.getInput("pass");
-const to = core.getInput("to");
+const email_destination = core.getInput("email_destination");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -40,7 +40,7 @@ var transporter = nodemailer.createTransport({
 
 const message = {
   from: user,
-  to: to,
+  to: email_destination,
   subject: "Design Your Model S | Tesla",
   html:
     "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
