@@ -26,7 +26,6 @@ const nodemailer = __nccwpck_require__(2350);
 
 const user = core.getInput("user");
 const pass = core.getInput("pass");
-const to = core.getInput("to");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
