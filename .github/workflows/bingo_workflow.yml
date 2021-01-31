@@ -6,7 +6,7 @@ on:
       - githubActions_improvement
 
 jobs:
-  name: syntax_check_job
+  linter-execution:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,8 +14,8 @@ jobs:
       - name: Linter execution
         uses: github/super-linter@v3
         env:
-          DEFAULT_BRANCH: githubActions_improvement
+          DEFAULT_BRANCH: nodejs_jest_job
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: /
-          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.js
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
           VALIDATE_JAVASCRIPT_ES: true
