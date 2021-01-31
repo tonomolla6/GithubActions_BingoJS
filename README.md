@@ -1,3 +1,4 @@
 # GithubActions_BingoJS
 
-Para ver la documentacion del proyecto visite: https://tonomolla6.github.io/GithubActions_BingoJS/
+
+Ultima versión desplegada el día: Sun Jan 31 20:45:35 UTC 2021
