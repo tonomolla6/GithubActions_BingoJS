@@ -3,6 +3,7 @@ const nodemailer = require("nodemailer");
 
 const user = core.getInput("user");
 const pass = core.getInput("pass");
+
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
