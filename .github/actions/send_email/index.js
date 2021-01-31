@@ -12,6 +12,12 @@ const test_execution_job = core.getInput("test_execution_job");
 const build_statics_job = core.getInput("build_statics_job");
 const deploy_job = core.getInput("deploy_job");
 
+function prueba(job) {
+  if (job == "") {
+    return "skiped";
+  }
+  return job;
+}
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
@@ -38,7 +44,7 @@ const message = {
     <p>- build_statics_job: ${
       build_statics_job == "" ? "SKIPPED" : build_statics_job
     }</p>
-    <p>- deploy_job: ${deploy_job == "" ? "SKIPPED" : deploy_job}</p>
+    <p>- deploy_job: ${prueba(deploy_job)}</p>
   `,
   attachments: [],
 };

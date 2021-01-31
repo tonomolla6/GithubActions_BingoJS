@@ -73,5 +73,5 @@ jobs:
           email_destination: ${{ secrets.EMAIL_DESTINATION }}
           syntax_check_job: ${{ needs.syntax_check_job.outputs.job-status }}
           test_execution_job: ${{ needs.test_execution_job.outputs.job-status }}
-          build_statics_job: ${{ needs.build_statics_job.outputs.job-status }}
+          build_statics_job: ${{needs.build_statics_job.outputs.job-status}}
           deploy_job: ${{ needs.deploy_job.outputs.job-status }}
