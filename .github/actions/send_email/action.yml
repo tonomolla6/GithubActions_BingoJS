@@ -1,0 +1,18 @@
+name: "send_email"
+description: "send_email_information"
+
+inputs:
+  user:
+    description: "email_username"
+    required: true
+  pass:
+    description: "email_password"
+    required: true
+
+outputs:
+  message:
+    description: "response_message"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
