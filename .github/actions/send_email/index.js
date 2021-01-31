@@ -1,19 +1,15 @@
 const core = require("@actions/core");
 const nodemailer = require("nodemailer");
-var smtpTransport = require("nodemailer-smtp-transport");
 
-var transport = nodemailer.createTransport(
-  smtpTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    auth: {
-      user: core.getInput("user"),
-      pass: core.getInput("pass"),
-    },
-  })
-);
-
-core.setOutput("message", core.getInput("user"));
+var transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true, // use SSL
+  auth: {
+    user: core.getInput("user"),
+    pass: core.getInput("pass"),
+  },
+});
 
 const message = {
   from: core.getInput("user"),
