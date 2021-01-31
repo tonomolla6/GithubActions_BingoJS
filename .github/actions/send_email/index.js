@@ -7,9 +7,8 @@ const email_destination = core.getInput("email_destination");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587,
-  ignoreTLS: false,
-  secure: false,
+  port: 465,
+  secure: true, // use SSL
   auth: {
     user: user,
     pass: pass,
