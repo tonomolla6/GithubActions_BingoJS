@@ -369,8 +369,8 @@ npm i -g @vercel/ncc
 
 acemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
-![Job de despliegue de los estáticos generados](/img/img9.png)
+![Job de envío de notificación a los usuarios del proyecto](/img/img9.png)
 
 Vamos al correo y comprobamos que recibimos la informacion.
 
-![Job de despliegue de los estáticos generados](/img/img10.png)
+![Correo con resultados](/img/img10.png)

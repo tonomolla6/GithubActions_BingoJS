@@ -71,3 +71,22 @@ jobs:
           user: ${{ secrets.EMAIL_USERNAME }}
           pass: ${{ secrets.EMAIL_PASSWORD }}
           email_destination: ${{ secrets.EMAIL_DESTINATION }}
+          syntax_check_job: ${{ needs.syntax_check_job.outputs.job-status }}
+          test_execution_job: ${{ needs.test_execution_job.outputs.job-status }}
+          build_statics_job: ${{needs.build_statics_job.outputs.job-status}}
+          deploy_job: ${{ needs.deploy_job.outputs.job-status }}
+  update_readme_job:
+    name: update_readme_job
+    runs-on: ubuntu-latest
+    needs: deploy_job
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set new line readme
+        run: "sed -i '$d' README.md; echo -e "\nUltima versión desplegada el día: `date`" >> README.md
+      - name: Push changes to repository
+        run: |
+          git config user.name tonomolla6
+          git config user.email tonomolla6@gmail.com
+          git commit -am "Actualizado el README!"
+          git push origin githubActions_improvement
