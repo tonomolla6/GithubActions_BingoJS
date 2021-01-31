@@ -6,28 +6,28 @@ on:
       - githubActions_improvement
 
 jobs:
-  syntax_check_job:
-    name: syntax_check_job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Linter execution
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: githubActions_improvement
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LINTER_RULES_PATH: /
-          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.js
-          VALIDATE_JAVASCRIPT_ES: true
-  # test_execution_job:
-  #   name: test_execution_job
+  # syntax_check_job:
+  #   name: syntax_check_job
   #   runs-on: ubuntu-latest
   #   steps:
   #     - name: Checkout repository
   #       uses: actions/checkout@v2
-  #     - name: Run jest tests
-  #       run: npm install; npm test
+  #     - name: Linter execution
+  #       uses: github/super-linter@v3
+  #       env:
+  #         DEFAULT_BRANCH: githubActions_improvement
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         LINTER_RULES_PATH: /
+  #         JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.js
+  #         VALIDATE_JAVASCRIPT_ES: true
+  test_execution_job:
+    name: test_execution_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run jest tests
+        run: npm install; npm test
   # build_statics_job:
   #   name: build_statics_job
   #   runs-on: ubuntu-latest
@@ -60,7 +60,7 @@ jobs:
   notification_job:
     name: notification_job
     runs-on: ubuntu-latest
-    needs: [syntax_check_job]
+    needs: [test_execution_job]
     if: ${{ always() }}
     steps:
       - name: Checkout code
@@ -71,4 +71,4 @@ jobs:
           user: ${{ secrets.EMAIL_USERNAME }}
           pass: ${{ secrets.EMAIL_PASSWORD }}
           email_destination: ${{ secrets.EMAIL_DESTINATION }}
-          data: ${{ needs }}
+          data: ${{ { "test_execution_job":needs.test_execution_job.outputs.job-status } }}
