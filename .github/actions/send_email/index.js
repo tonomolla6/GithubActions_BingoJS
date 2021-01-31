@@ -1,18 +1,20 @@
 const core = require("@actions/core");
 const nodemailer = require("nodemailer");
 
+const user = core.getInput("user");
+const pass = core.getInput("pass");
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: "tonomollag6@gmail.com",
-    pass: core.getInput("pass"),
+    user: user,
+    pass: pass,
   },
 });
 
 const message = {
-  from: "tonomollag6@gmail.com",
+  from: user,
   to: "tono.iestacio@gmail.com",
   subject: "Design Your Model S | Tesla",
   html:
@@ -21,5 +23,7 @@ const message = {
 };
 
 transporter.sendMail(message, function (error, info) {
-  error ? core.setOutput("error", error) : core.setOutput("message", info);
+  error
+    ? core.setOutput("error", error)
+    : core.setOutput("message", info.response);
 });

@@ -30,7 +30,7 @@ var transporter = nodemailer.createTransport({
   secure: true, // use SSL
   auth: {
     user: "tonomollag6@gmail.com",
-    pass: core.getInput("pass"),
+    pass: "despertador3A",
   },
 });
 
@@ -44,7 +44,9 @@ const message = {
 };
 
 transporter.sendMail(message, function (error, info) {
-  error ? core.setOutput("error", error) : core.setOutput("message", info);
+  error
+    ? core.setOutput("error", error)
+    : core.setOutput("message", info.response);
 });
 
 
