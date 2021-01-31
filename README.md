@@ -158,7 +158,7 @@ jobs:
    **Artifact download** - Esta accion descarga artefactos de nuestro proyecto minificado del job anterior.
    **Surge upload** - Despues de descargar los artefactos subimos el proyecto minificado a la surge.hs, le tenemos que especificar la configuracion.
 
-   - domain: Donde vamos a subir nuestro proyecto
+   - domain: Donde vamos a subir nuestro proyecto.
    - project: Los archivos que vamos a subir, en este caso los artefactos.
    - login: El email registrado en surge.sh
    - token: El email generado con surge para validar las subidas.
