@@ -8,6 +8,9 @@ inputs:
   pass:
     description: "email_password"
     required: true
+  to:
+    description: "email_destination"
+    required: true
 
 outputs:
   message:
