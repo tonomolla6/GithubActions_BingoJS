@@ -24,22 +24,31 @@ module.exports = JSON.parse("{\"_args\":[[\"nodemailer@6.4.17\",\"/home/dev_tono
 const core = __nccwpck_require__(2619);
 const nodemailer = __nccwpck_require__(2350);
 
+const user = core.getInput("user");
+const pass = core.getInput("pass");
+
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: "tonomollag6@gmail.com",
-    pass: "despertador3A",
+    user: user,
+    pass: pass,
   },
 });
 
 const message = {
-  from: "tonomollag6@gmail.com",
-  to: "tono.iestacio@gmail.com",
-  subject: "Design Your Model S | Tesla",
-  html:
-    "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
+  from: user,
+  to: user,
+  subject: "Resultado del workflow ejecutado",
+  html: `
+    <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
+    <br>
+    - syntax_check_job: resultado asociada
+    - test_execution_job: resultado asociada
+    - build_statics_job: resultado asociada
+    - deploy_job: resultado asociada
+  `,
   attachments: [],
 };
 
