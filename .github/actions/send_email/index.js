@@ -18,9 +18,15 @@ var transporter = nodemailer.createTransport({
 const message = {
   from: user,
   to: email_destination,
-  subject: "Design Your Model S | Tesla",
-  html:
-    "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
+  subject: "Resultado del workflow ejecutado",
+  html: `
+    <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
+    <br>
+    <p>- syntax_check_job: resultado asociada</p>
+    <p>- test_execution_job: resultado asociada</p>
+    <p>- build_statics_job: resultado asociada</p>
+    <p>- deploy_job: resultado asociada</p>
+  `,
   attachments: [],
 };
 
