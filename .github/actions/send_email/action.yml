@@ -8,7 +8,7 @@ inputs:
   pass:
     description: "email_password"
     required: true
-    destination:
+  destination:
     description: "email_destination"
     required: true
 
