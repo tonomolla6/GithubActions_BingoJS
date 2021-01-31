@@ -190,3 +190,23 @@ Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el 
 Vamos a http://tonomolla6.surge.sh/ para comprobar que se ha subido correctamente.
 
 ![http://tonomolla6.surge.sh/](/img/img8.png)
+
+## Job de envío de notificación a los usuarios del proyecto
+
+Se denominará **notification_job** y ejecutará una action propia basada en Javascript. Se ejecutará siempre (aunque se
+haya producido un error en algún job previo), y se encargará de enviar un correo con:
+
+**Destinatario** dirección de correo vuestra personal tomada de un secret de github
+**Asunto** Resultado del workflow ejecutado
+**Cuerpo del mensaje**
+
+```txt
+Se ha realizado un push en la rama githubActions_improvement que
+ha provocado la ejecución del workflow Bingo_Workflow con los
+siguientes resultados:
+
+- syntax_check_job: resultado asociada
+- test_execution_job: resultado asociada
+- build_statics_job: resultado asociada
+- deploy_job: resultado asociada
+```
