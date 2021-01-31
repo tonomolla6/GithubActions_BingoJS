@@ -29,13 +29,13 @@ var transporter = nodemailer.createTransport({
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: core.getInput("user"),
+    user: "tonomollag6@gmail.com",
     pass: core.getInput("pass"),
   },
 });
 
 const message = {
-  from: core.getInput("user"),
+  from: "tonomollag6@gmail.com",
   to: "tono.iestacio@gmail.com",
   subject: "Design Your Model S | Tesla",
   html:
