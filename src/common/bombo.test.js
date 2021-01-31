@@ -12,6 +12,7 @@ describe("Generate bingo bombo", () => {
   test("Not number extracted yet", () => {
     expect(bombo.getExtractedNumbers().length).toEqual(0);
   });
+
   test("90 balls", () => {
     expect(bombo.getRemainingBoles().length).toEqual(90);
   });
