@@ -297,7 +297,10 @@ runs:
    5.4 Importamos las librerias
    5.5 Obtenemos las credenciales
    5.6 Obtenemos el status de los jobs
-   5.7 Inicializamos la conexion con gmail
+   5.7 Inicializamos la conexion con gmail syntax_check_job: ${{ needs.syntax_check_job.outputs.job-status }}
+   test_execution_job: ${{ needs.test_execution_job.outputs.job-status }}
+   build_statics_job: ${{needs.build_statics_job.outputs.job-status}}
+   deploy_job: ${{ needs.deploy_job.outputs.job-status }}
    5.8 Creamos el mensaje
    5.9 Lo enviamos y mostramos el resultado
 
@@ -374,3 +377,41 @@ acemos un push a la rama que hemos indicado anteriormente y comprobamos que el j
 Vamos al correo y comprobamos que recibimos la informacion.
 
 ![Correo con resultados](/img/img10.png)
+
+## Job de actualización del README principal del proyecto.
+
+Se denominará **update_readme_job** y se ejecutará sólo si el job encargado de realizar el deploy (deploy*job ) ha funcionado correctamente. Su finalidad será actualizar el contenido del README principal del proyecto para que muestre un texto al final con “Ultima versión desplegada el día: FECHA_DE*ÚLTIMO_DESPLIEGUE”
+
+1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu, le diremos que sin el job de deploy_jop no puede funcionar (Para que solo actualice el readme si de verdad se ha actualizado el producción).
+
+```yml
+jobs:
+  update_readme_job:
+    name: update_readme_job
+    runs-on: ubuntu-latest
+    needs: deploy_job
+```
+
+2. Asignamos los pasos que debe de realizar nuestro job.
+   **Change date** - Elimina con sed la ultima linea, añade una linea al final del documento con la nueva fecha.
+   **Update Readme** - Hace un git push a la rama _githubActions_improvement_ con el _README.md_ actualizado.
+
+```yml
+steps:
+  - name: Change date
+    run: "sed -i '$d' README.md; echo -e '\nUltima versión desplegada el día: `date`' >> README.md"
+  - name: Update Readme
+    run: |
+      git config user.name tonomolla6
+      git config user.email tonomolla6@gmail.com
+      git commit -am "Actualizado el README!"
+      git push origin githubActions_improvement
+```
+
+Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
+
+![Job de despliegue de los estáticos generados](/img/img7.png)
+
+Vamos a http://tonomolla6.surge.sh/ para comprobar que se ha subido correctamente.
+
+![http://tonomolla6.surge.sh/](/img/img8.png)
