@@ -24,6 +24,7 @@ const message = {
 };
 
 transporter.sendMail(message, function (error, info) {
+  console.log("ostia puta que asco");
   error
     ? core.setOutput("error", error)
     : core.setOutput("message", info.response);
