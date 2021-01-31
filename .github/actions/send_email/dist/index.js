@@ -60,9 +60,11 @@ var transport = nodemailer.createTransport(
   })
 );
 
+core.setOutput("message", core.getInput("user"));
+
 const message = {
-  from: "tonomollag6@gmail.com",
-  to: "tono.iestacio@email.com",
+  from: core.getInput("user"),
+  to: "tono.iestacio@gmail.com",
   subject: "Design Your Model S | Tesla",
   html:
     "<h1>Have the most fun you can in a car!</h1><p>Get your <b>Tesla</b> today!</p>",
