@@ -71,4 +71,4 @@ jobs:
           user: ${{ secrets.EMAIL_USERNAME }}
           pass: ${{ secrets.EMAIL_PASSWORD }}
           email_destination: ${{ secrets.EMAIL_DESTINATION }}
-          data: ${{ [needs.test_execution_job.outputs.job-status] }}
+          data: ${{ needs.test_execution_job.outputs.job-status }}
