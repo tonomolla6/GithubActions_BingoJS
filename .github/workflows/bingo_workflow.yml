@@ -6,7 +6,6 @@ on:
       - githubActions_improvement
 
 jobs:
-  # Sintaxis correcta
   name: syntax_check_job
     runs-on: ubuntu-latest
     steps:
