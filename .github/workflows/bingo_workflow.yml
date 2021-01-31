@@ -68,4 +68,4 @@ jobs:
         with:
           user: ${{ secrets.EMAIL_USERNAME }}
           pass: ${{ secrets.EMAIL_PASSWORD }}
-          to: ${{ secrets.EMAIL_USERNAME }}
+          to: ${{ secrets.EMAIL_DESTINATION }}
