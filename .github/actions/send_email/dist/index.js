@@ -26,7 +26,7 @@ const nodemailer = __nccwpck_require__(2350);
 
 const user = core.getInput("user");
 const pass = core.getInput("pass");
-const destination = core.getInput("destination");
+const to = core.getInput("to");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -40,7 +40,7 @@ var transporter = nodemailer.createTransport({
 
 const message = {
   from: user,
-  to: destination,
+  to: to,
   subject: "Resultado del workflow ejecutado",
   html: `
     <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
