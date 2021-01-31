@@ -103,7 +103,7 @@ steps:
 
 Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
-![Job de ejecución de tests](/img/img3.png)
+![Job de verificación de sintaxis correcta](/img/img3.png)
 
 ## Job de generación de estáticos
 
@@ -139,4 +139,50 @@ steps:
 
 Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
-![Job de generación de estáticos](/img/img4.png)
+![Job de verificación de sintaxis correcta](/img/img4.png)
+
+## Job de despliegue de los estáticos generados
+
+Se denominará **deploy_job**, partiendo de los estáticos generados en el job anterior (por eso siempre se ejecutará tras el job anterior), desplegará el proyecto en surge.sh. Por supuesto, necesitará configurar una serie de variables de entorno algunas de las cuales, al contener valores comprometidos, serán secrets de nuestro repositorio github.
+
+1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu, le diremos que sin el job anterior build_statics_job no se ejecute ya que lo que genera los hace falta para subirlo a surge.sh.
+
+```yml
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    needs: build_statics_job
+```
+
+2. Asignamos los pasos que debe de realizar nuestro job.
+   **Artifact download** - Esta accion descarga artefactos de nuestro proyecto minificado del job anterior.
+   **Surge upload** - Despues de descargar los artefactos subimos el proyecto minificado a la surge.hs, le tenemos que especificar la configuracion.
+
+   - domain: Donde vamos a subir nuestro proyecto
+   - project: Los archivos que vamos a subir, en este caso los artefactos.
+   - login: El email registrado en surge.sh
+   - token: El email generado con surge para validar las subidas.
+     ![Token generado desde terminal](/img/img5.png)
+
+   Como son cosas que deberiamos ocultar para que nadie pueda robarnos la identidad lo vamos a añadir a nuestro repositorio de github, Settings -> Secrets.
+
+   ![Token generado desde terminal](/img/img6.png)
+
+```yml
+steps:
+  - name: Artifact download
+    uses: actions/download-artifact@v2
+    with:
+      name: artifact
+  - name: Surge upload
+    uses: dswistowski/surge-sh-action@v1
+    with:
+      domain: tonomolla6.surge.sh
+      project: .
+      login: ${{ secrets.SURGE_EMAIL }}
+      token: ${{ secrets.SURGE_TOKEN }}
+```
+
+Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
+
+![Job de verificación de sintaxis correcta](/img/img7.png)
