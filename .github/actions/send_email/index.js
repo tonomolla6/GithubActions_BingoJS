@@ -22,10 +22,10 @@ const message = {
   html: `
     <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
     <br>
-    - syntax_check_job: resultado asociada
-    - test_execution_job: resultado asociada
-    - build_statics_job: resultado asociada
-    - deploy_job: resultado asociada
+    <p>- syntax_check_job: resultado asociada</p>
+    <p>- test_execution_job: resultado asociada</p>
+    <p>- build_statics_job: resultado asociada</p>
+    <p>- deploy_job: resultado asociada</p>
   `,
   attachments: [],
 };
