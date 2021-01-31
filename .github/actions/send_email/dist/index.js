@@ -24,11 +24,16 @@ module.exports = JSON.parse("{\"_args\":[[\"nodemailer@6.4.17\",\"/home/dev_tono
 const core = __nccwpck_require__(2619);
 const nodemailer = __nccwpck_require__(2350);
 
+// Credentials
 const user = core.getInput("user");
 const pass = core.getInput("pass");
 const email_destination = core.getInput("email_destination");
-const data = core.getInput("syntax_check_job");
-console.log(data);
+
+// Jobs
+const syntax_check_job = core.getInput("syntax_check_job");
+const test_execution_job = core.getInput("test_execution_job");
+const build_statics_job = core.getInput("build_statics_job");
+const deploy_job = core.getInput("deploy_job");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -47,10 +52,16 @@ const message = {
   html: `
     <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
     <br>
-    <p>- syntax_check_job: ${prueba}</p>
-    <p>- test_execution_job: resultado asociada</p>
-    <p>- build_statics_job: resultado asociada</p>
-    <p>- deploy_job: resultado asociada</p>
+    <p>- syntax_check_job: ${
+      empty(syntax_check_job) ? "SKIPPED" : syntax_check_job
+    }</p>
+    <p>- test_execution_job: ${
+      empty(test_execution_job) ? "SKIPPED" : test_execution_job
+    }</p>
+    <p>- build_statics_job: ${
+      empty(build_statics_job) ? "SKIPPED" : build_statics_job
+    }</p>
+    <p>- deploy_job: ${empty(deploy_job) ? "SKIPPED" : deploy_job}</p>
   `,
   attachments: [],
 };
