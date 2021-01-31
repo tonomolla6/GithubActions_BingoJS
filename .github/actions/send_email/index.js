@@ -5,9 +5,6 @@ const user = core.getInput("user");
 const pass = core.getInput("pass");
 const to = core.getInput("to");
 
-console.log(user + "s");
-console.log(to + "s");
-
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
@@ -20,7 +17,7 @@ var transporter = nodemailer.createTransport({
 
 const message = {
   from: user,
-  to: to,
+  to: "tono.iestacio@gmail.com",
   subject: "Resultado del workflow ejecutado",
   html: `
     <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
