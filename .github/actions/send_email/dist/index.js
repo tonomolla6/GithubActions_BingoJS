@@ -2,6 +2,22 @@ module.exports =
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 5366:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse("{\"_args\":[[\"nodemailer-smtp-transport@2.7.4\",\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\"]],\"_from\":\"nodemailer-smtp-transport@2.7.4\",\"_id\":\"nodemailer-smtp-transport@2.7.4\",\"_inBundle\":false,\"_integrity\":\"sha1-DYmvAZoUSkgP2OzJmZfZ+DjxNoU=\",\"_location\":\"/nodemailer-smtp-transport\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"nodemailer-smtp-transport@2.7.4\",\"name\":\"nodemailer-smtp-transport\",\"escapedName\":\"nodemailer-smtp-transport\",\"rawSpec\":\"2.7.4\",\"saveSpec\":null,\"fetchSpec\":\"2.7.4\"},\"_requiredBy\":[\"/\"],\"_resolved\":\"https://registry.npmjs.org/nodemailer-smtp-transport/-/nodemailer-smtp-transport-2.7.4.tgz\",\"_spec\":\"2.7.4\",\"_where\":\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\",\"author\":{\"name\":\"Andris Reinman\"},\"bugs\":{\"url\":\"https://github.com/andris9/nodemailer-smtp-transport/issues\"},\"dependencies\":{\"nodemailer-shared\":\"1.1.0\",\"nodemailer-wellknown\":\"0.1.10\",\"smtp-connection\":\"2.12.0\"},\"description\":\"SMTP transport for Nodemailer\",\"devDependencies\":{\"chai\":\"^3.5.0\",\"grunt\":\"^1.0.1\",\"grunt-cli\":\"^1.2.0\",\"grunt-eslint\":\"^19.0.0\",\"grunt-mocha-test\":\"^0.12.7\",\"mocha\":\"^3.0.2\",\"smtp-server\":\"^1.14.2\"},\"homepage\":\"http://github.com/andris9/nodemailer-smtp-transport\",\"keywords\":[\"SMTP\",\"Nodemailer\"],\"license\":\"MIT\",\"main\":\"lib/smtp-transport.js\",\"name\":\"nodemailer-smtp-transport\",\"repository\":{\"type\":\"git\",\"url\":\"git://github.com/andris9/nodemailer-smtp-transport.git\"},\"scripts\":{\"test\":\"grunt mochaTest\"},\"version\":\"2.7.4\"}");
+
+/***/ }),
+
+/***/ 7335:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse("{\"126\":{\"host\":\"smtp.126.com\",\"port\":465,\"secure\":true},\"163\":{\"host\":\"smtp.163.com\",\"port\":465,\"secure\":true},\"1und1\":{\"host\":\"smtp.1und1.de\",\"port\":465,\"secure\":true,\"authMethod\":\"LOGIN\"},\"AOL\":{\"domains\":[\"aol.com\"],\"host\":\"smtp.aol.com\",\"port\":587},\"DebugMail\":{\"host\":\"debugmail.io\",\"port\":25},\"DynectEmail\":{\"aliases\":[\"Dynect\"],\"host\":\"smtp.dynect.net\",\"port\":25},\"FastMail\":{\"domains\":[\"fastmail.fm\"],\"host\":\"mail.messagingengine.com\",\"port\":465,\"secure\":true},\"GandiMail\":{\"aliases\":[\"Gandi\",\"Gandi Mail\"],\"host\":\"mail.gandi.net\",\"port\":587},\"Gmail\":{\"aliases\":[\"Google Mail\"],\"domains\":[\"gmail.com\",\"googlemail.com\"],\"host\":\"smtp.gmail.com\",\"port\":465,\"secure\":true},\"Godaddy\":{\"host\":\"smtpout.secureserver.net\",\"port\":25},\"GodaddyAsia\":{\"host\":\"smtp.asia.secureserver.net\",\"port\":25},\"GodaddyEurope\":{\"host\":\"smtp.europe.secureserver.net\",\"port\":25},\"hot.ee\":{\"host\":\"mail.hot.ee\"},\"Hotmail\":{\"aliases\":[\"Outlook\",\"Outlook.com\",\"Hotmail.com\"],\"domains\":[\"hotmail.com\",\"outlook.com\"],\"host\":\"smtp.live.com\",\"port\":587,\"tls\":{\"ciphers\":\"SSLv3\"}},\"iCloud\":{\"aliases\":[\"Me\",\"Mac\"],\"domains\":[\"me.com\",\"mac.com\"],\"host\":\"smtp.mail.me.com\",\"port\":587},\"mail.ee\":{\"host\":\"smtp.mail.ee\"},\"Mail.ru\":{\"host\":\"smtp.mail.ru\",\"port\":465,\"secure\":true},\"Maildev\":{\"port\":1025,\"ignoreTLS\":true},\"Mailgun\":{\"host\":\"smtp.mailgun.org\",\"port\":587},\"Mailjet\":{\"host\":\"in.mailjet.com\",\"port\":587},\"Mandrill\":{\"host\":\"smtp.mandrillapp.com\",\"port\":587},\"Naver\":{\"host\":\"smtp.naver.com\",\"port\":587},\"OpenMailBox\":{\"aliases\":[\"OMB\",\"openmailbox.org\"],\"host\":\"smtp.openmailbox.org\",\"port\":465,\"secure\":true},\"Postmark\":{\"aliases\":[\"PostmarkApp\"],\"host\":\"smtp.postmarkapp.com\",\"port\":2525},\"QQ\":{\"domains\":[\"qq.com\"],\"host\":\"smtp.qq.com\",\"port\":465,\"secure\":true},\"QQex\":{\"aliases\":[\"QQ Enterprise\"],\"domains\":[\"exmail.qq.com\"],\"host\":\"smtp.exmail.qq.com\",\"port\":465,\"secure\":true},\"SendCloud\":{\"host\":\"smtpcloud.sohu.com\",\"port\":25},\"SendGrid\":{\"host\":\"smtp.sendgrid.net\",\"port\":587},\"SES\":{\"host\":\"email-smtp.us-east-1.amazonaws.com\",\"port\":465,\"secure\":true},\"SES-US-EAST-1\":{\"host\":\"email-smtp.us-east-1.amazonaws.com\",\"port\":465,\"secure\":true},\"SES-US-WEST-2\":{\"host\":\"email-smtp.us-west-2.amazonaws.com\",\"port\":465,\"secure\":true},\"SES-EU-WEST-1\":{\"host\":\"email-smtp.eu-west-1.amazonaws.com\",\"port\":465,\"secure\":true},\"Sparkpost\":{\"aliases\":[\"SparkPost\",\"SparkPost Mail\"],\"domains\":[\"sparkpost.com\"],\"host\":\"smtp.sparkpostmail.com\",\"port\":587,\"secure\":false},\"Yahoo\":{\"domains\":[\"yahoo.com\"],\"host\":\"smtp.mail.yahoo.com\",\"port\":465,\"secure\":true},\"Yandex\":{\"domains\":[\"yandex.ru\"],\"host\":\"smtp.yandex.ru\",\"port\":465,\"secure\":true},\"Zoho\":{\"host\":\"smtp.zoho.com\",\"port\":465,\"secure\":true,\"authMethod\":\"LOGIN\"}}");
+
+/***/ }),
+
 /***/ 1913:
 /***/ ((module) => {
 
@@ -14,16 +30,24 @@ module.exports = JSON.parse("{\"126\":{\"host\":\"smtp.126.com\",\"port\":465,\"
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"_from\":\"nodemailer\",\"_id\":\"nodemailer@6.4.17\",\"_inBundle\":false,\"_integrity\":\"sha512-89ps+SBGpo0D4Bi5ZrxcrCiRFaMmkCt+gItMXQGzEtZVR3uAD3QAQIDoxTWnx3ky0Dwwy/dhFrQ+6NNGXpw/qQ==\",\"_location\":\"/nodemailer\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"tag\",\"registry\":true,\"raw\":\"nodemailer\",\"name\":\"nodemailer\",\"escapedName\":\"nodemailer\",\"rawSpec\":\"\",\"saveSpec\":null,\"fetchSpec\":\"latest\"},\"_requiredBy\":[\"#USER\",\"/\"],\"_resolved\":\"https://registry.npmjs.org/nodemailer/-/nodemailer-6.4.17.tgz\",\"_shasum\":\"8de98618028953b80680775770f937243a7d7877\",\"_spec\":\"nodemailer\",\"_where\":\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\",\"author\":{\"name\":\"Andris Reinman\"},\"bugs\":{\"url\":\"https://github.com/nodemailer/nodemailer/issues\"},\"bundleDependencies\":false,\"dependencies\":{},\"deprecated\":false,\"description\":\"Easy as cake e-mail sending from your Node.js applications\",\"devDependencies\":{\"bunyan\":\"1.8.14\",\"chai\":\"4.2.0\",\"eslint-config-nodemailer\":\"1.2.0\",\"eslint-config-prettier\":\"7.0.0\",\"grunt\":\"1.3.0\",\"grunt-cli\":\"1.3.2\",\"grunt-eslint\":\"23.0.0\",\"grunt-mocha-test\":\"0.13.3\",\"libbase64\":\"1.2.1\",\"libmime\":\"5.0.0\",\"libqp\":\"1.1.0\",\"mocha\":\"8.2.1\",\"nodemailer-ntlm-auth\":\"1.0.1\",\"proxy\":\"1.0.2\",\"proxy-test-server\":\"1.0.0\",\"sinon\":\"9.2.1\",\"smtp-server\":\"3.8.0\"},\"engines\":{\"node\":\">=6.0.0\"},\"homepage\":\"https://nodemailer.com/\",\"keywords\":[\"Nodemailer\"],\"license\":\"MIT\",\"main\":\"lib/nodemailer.js\",\"name\":\"nodemailer\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/nodemailer/nodemailer.git\"},\"scripts\":{\"test\":\"grunt\"},\"version\":\"6.4.17\"}");
+module.exports = JSON.parse("{\"_args\":[[\"nodemailer@6.4.17\",\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\"]],\"_from\":\"nodemailer@6.4.17\",\"_id\":\"nodemailer@6.4.17\",\"_inBundle\":false,\"_integrity\":\"sha512-89ps+SBGpo0D4Bi5ZrxcrCiRFaMmkCt+gItMXQGzEtZVR3uAD3QAQIDoxTWnx3ky0Dwwy/dhFrQ+6NNGXpw/qQ==\",\"_location\":\"/nodemailer\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"nodemailer@6.4.17\",\"name\":\"nodemailer\",\"escapedName\":\"nodemailer\",\"rawSpec\":\"6.4.17\",\"saveSpec\":null,\"fetchSpec\":\"6.4.17\"},\"_requiredBy\":[\"/\"],\"_resolved\":\"https://registry.npmjs.org/nodemailer/-/nodemailer-6.4.17.tgz\",\"_spec\":\"6.4.17\",\"_where\":\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\",\"author\":{\"name\":\"Andris Reinman\"},\"bugs\":{\"url\":\"https://github.com/nodemailer/nodemailer/issues\"},\"dependencies\":{},\"description\":\"Easy as cake e-mail sending from your Node.js applications\",\"devDependencies\":{\"bunyan\":\"1.8.14\",\"chai\":\"4.2.0\",\"eslint-config-nodemailer\":\"1.2.0\",\"eslint-config-prettier\":\"7.0.0\",\"grunt\":\"1.3.0\",\"grunt-cli\":\"1.3.2\",\"grunt-eslint\":\"23.0.0\",\"grunt-mocha-test\":\"0.13.3\",\"libbase64\":\"1.2.1\",\"libmime\":\"5.0.0\",\"libqp\":\"1.1.0\",\"mocha\":\"8.2.1\",\"nodemailer-ntlm-auth\":\"1.0.1\",\"proxy\":\"1.0.2\",\"proxy-test-server\":\"1.0.0\",\"sinon\":\"9.2.1\",\"smtp-server\":\"3.8.0\"},\"engines\":{\"node\":\">=6.0.0\"},\"homepage\":\"https://nodemailer.com/\",\"keywords\":[\"Nodemailer\"],\"license\":\"MIT\",\"main\":\"lib/nodemailer.js\",\"name\":\"nodemailer\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/nodemailer/nodemailer.git\"},\"scripts\":{\"test\":\"grunt\"},\"version\":\"6.4.17\"}");
+
+/***/ }),
+
+/***/ 987:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse("{\"_args\":[[\"smtp-connection@2.12.0\",\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\"]],\"_from\":\"smtp-connection@2.12.0\",\"_id\":\"smtp-connection@2.12.0\",\"_inBundle\":false,\"_integrity\":\"sha1-1275EnyyPCJZ7bHoNJwujV4tdME=\",\"_location\":\"/smtp-connection\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"smtp-connection@2.12.0\",\"name\":\"smtp-connection\",\"escapedName\":\"smtp-connection\",\"rawSpec\":\"2.12.0\",\"saveSpec\":null,\"fetchSpec\":\"2.12.0\"},\"_requiredBy\":[\"/nodemailer-smtp-transport\"],\"_resolved\":\"https://registry.npmjs.org/smtp-connection/-/smtp-connection-2.12.0.tgz\",\"_spec\":\"2.12.0\",\"_where\":\"/home/dev_tono/Desktop/GithubActions_BingoJS/.github/actions/send_email\",\"author\":{\"name\":\"Andris Reinman\"},\"bugs\":{\"url\":\"https://github.com/andris9/smtp-connection/issues\"},\"dependencies\":{\"httpntlm\":\"1.6.1\",\"nodemailer-shared\":\"1.1.0\"},\"description\":\"Connect to SMTP servers\",\"devDependencies\":{\"chai\":\"^3.5.0\",\"grunt\":\"^1.0.1\",\"grunt-cli\":\"^1.2.0\",\"grunt-eslint\":\"^19.0.0\",\"grunt-mocha-test\":\"^0.12.7\",\"mocha\":\"^3.0.2\",\"proxy-test-server\":\"^1.0.0\",\"sinon\":\"^1.17.5\",\"smtp-server\":\"^1.14.2\",\"xoauth2\":\"^1.2.0\"},\"directories\":{\"test\":\"test\"},\"homepage\":\"https://github.com/andris9/smtp-connection\",\"keywords\":[\"SMTP\"],\"license\":\"MIT\",\"main\":\"lib/smtp-connection.js\",\"name\":\"smtp-connection\",\"repository\":{\"type\":\"git\",\"url\":\"git://github.com/andris9/smtp-connection.git\"},\"scripts\":{\"test\":\"grunt mochaTest\"},\"version\":\"2.12.0\"}");
 
 /***/ }),
 
 /***/ 8071:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __nccwpck_require__) => {
 
-const core = __nccwpck_require__(5518);
+const core = __nccwpck_require__(2619);
 const nodemailer = __nccwpck_require__(2350);
-var smtpTransport = __nccwpck_require__(1);
+var smtpTransport = __nccwpck_require__(4454);
 
 var transport = nodemailer.createTransport(
   smtpTransport({
@@ -51,6 +75,1944 @@ transport.sendMail(message, function (error, info) {
     : core.setOutput("message", info.response);
 });
 
+
+/***/ }),
+
+/***/ 5183:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const os = __importStar(__nccwpck_require__(2087));
+const utils_1 = __nccwpck_require__(8091);
+/**
+ * Commands
+ *
+ * Command Format:
+ *   ::name key=value,key=value::message
+ *
+ * Examples:
+ *   ::warning::This is the message
+ *   ::set-env name=MY_VAR::some value
+ */
+function issueCommand(command, properties, message) {
+    const cmd = new Command(command, properties, message);
+    process.stdout.write(cmd.toString() + os.EOL);
+}
+exports.issueCommand = issueCommand;
+function issue(name, message = '') {
+    issueCommand(name, {}, message);
+}
+exports.issue = issue;
+const CMD_STRING = '::';
+class Command {
+    constructor(command, properties, message) {
+        if (!command) {
+            command = 'missing.command';
+        }
+        this.command = command;
+        this.properties = properties;
+        this.message = message;
+    }
+    toString() {
+        let cmdStr = CMD_STRING + this.command;
+        if (this.properties && Object.keys(this.properties).length > 0) {
+            cmdStr += ' ';
+            let first = true;
+            for (const key in this.properties) {
+                if (this.properties.hasOwnProperty(key)) {
+                    const val = this.properties[key];
+                    if (val) {
+                        if (first) {
+                            first = false;
+                        }
+                        else {
+                            cmdStr += ',';
+                        }
+                        cmdStr += `${key}=${escapeProperty(val)}`;
+                    }
+                }
+            }
+        }
+        cmdStr += `${CMD_STRING}${escapeData(this.message)}`;
+        return cmdStr;
+    }
+}
+function escapeData(s) {
+    return utils_1.toCommandValue(s)
+        .replace(/%/g, '%25')
+        .replace(/\r/g, '%0D')
+        .replace(/\n/g, '%0A');
+}
+function escapeProperty(s) {
+    return utils_1.toCommandValue(s)
+        .replace(/%/g, '%25')
+        .replace(/\r/g, '%0D')
+        .replace(/\n/g, '%0A')
+        .replace(/:/g, '%3A')
+        .replace(/,/g, '%2C');
+}
+//# sourceMappingURL=command.js.map
+
+/***/ }),
+
+/***/ 2619:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const command_1 = __nccwpck_require__(5183);
+const file_command_1 = __nccwpck_require__(5939);
+const utils_1 = __nccwpck_require__(8091);
+const os = __importStar(__nccwpck_require__(2087));
+const path = __importStar(__nccwpck_require__(5622));
+/**
+ * The code to exit an action
+ */
+var ExitCode;
+(function (ExitCode) {
+    /**
+     * A code indicating that the action was successful
+     */
+    ExitCode[ExitCode["Success"] = 0] = "Success";
+    /**
+     * A code indicating that the action was a failure
+     */
+    ExitCode[ExitCode["Failure"] = 1] = "Failure";
+})(ExitCode = exports.ExitCode || (exports.ExitCode = {}));
+//-----------------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------------
+/**
+ * Sets env variable for this action and future actions in the job
+ * @param name the name of the variable to set
+ * @param val the value of the variable. Non-string values will be converted to a string via JSON.stringify
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function exportVariable(name, val) {
+    const convertedVal = utils_1.toCommandValue(val);
+    process.env[name] = convertedVal;
+    const filePath = process.env['GITHUB_ENV'] || '';
+    if (filePath) {
+        const delimiter = '_GitHubActionsFileCommandDelimeter_';
+        const commandValue = `${name}<<${delimiter}${os.EOL}${convertedVal}${os.EOL}${delimiter}`;
+        file_command_1.issueCommand('ENV', commandValue);
+    }
+    else {
+        command_1.issueCommand('set-env', { name }, convertedVal);
+    }
+}
+exports.exportVariable = exportVariable;
+/**
+ * Registers a secret which will get masked from logs
+ * @param secret value of the secret
+ */
+function setSecret(secret) {
+    command_1.issueCommand('add-mask', {}, secret);
+}
+exports.setSecret = setSecret;
+/**
+ * Prepends inputPath to the PATH (for this action and future actions)
+ * @param inputPath
+ */
+function addPath(inputPath) {
+    const filePath = process.env['GITHUB_PATH'] || '';
+    if (filePath) {
+        file_command_1.issueCommand('PATH', inputPath);
+    }
+    else {
+        command_1.issueCommand('add-path', {}, inputPath);
+    }
+    process.env['PATH'] = `${inputPath}${path.delimiter}${process.env['PATH']}`;
+}
+exports.addPath = addPath;
+/**
+ * Gets the value of an input.  The value is also trimmed.
+ *
+ * @param     name     name of the input to get
+ * @param     options  optional. See InputOptions.
+ * @returns   string
+ */
+function getInput(name, options) {
+    const val = process.env[`INPUT_${name.replace(/ /g, '_').toUpperCase()}`] || '';
+    if (options && options.required && !val) {
+        throw new Error(`Input required and not supplied: ${name}`);
+    }
+    return val.trim();
+}
+exports.getInput = getInput;
+/**
+ * Sets the value of an output.
+ *
+ * @param     name     name of the output to set
+ * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function setOutput(name, value) {
+    command_1.issueCommand('set-output', { name }, value);
+}
+exports.setOutput = setOutput;
+/**
+ * Enables or disables the echoing of commands into stdout for the rest of the step.
+ * Echoing is disabled by default if ACTIONS_STEP_DEBUG is not set.
+ *
+ */
+function setCommandEcho(enabled) {
+    command_1.issue('echo', enabled ? 'on' : 'off');
+}
+exports.setCommandEcho = setCommandEcho;
+//-----------------------------------------------------------------------
+// Results
+//-----------------------------------------------------------------------
+/**
+ * Sets the action status to failed.
+ * When the action exits it will be with an exit code of 1
+ * @param message add error issue message
+ */
+function setFailed(message) {
+    process.exitCode = ExitCode.Failure;
+    error(message);
+}
+exports.setFailed = setFailed;
+//-----------------------------------------------------------------------
+// Logging Commands
+//-----------------------------------------------------------------------
+/**
+ * Gets whether Actions Step Debug is on or not
+ */
+function isDebug() {
+    return process.env['RUNNER_DEBUG'] === '1';
+}
+exports.isDebug = isDebug;
+/**
+ * Writes debug message to user log
+ * @param message debug message
+ */
+function debug(message) {
+    command_1.issueCommand('debug', {}, message);
+}
+exports.debug = debug;
+/**
+ * Adds an error issue
+ * @param message error issue message. Errors will be converted to string via toString()
+ */
+function error(message) {
+    command_1.issue('error', message instanceof Error ? message.toString() : message);
+}
+exports.error = error;
+/**
+ * Adds an warning issue
+ * @param message warning issue message. Errors will be converted to string via toString()
+ */
+function warning(message) {
+    command_1.issue('warning', message instanceof Error ? message.toString() : message);
+}
+exports.warning = warning;
+/**
+ * Writes info to log with console.log.
+ * @param message info message
+ */
+function info(message) {
+    process.stdout.write(message + os.EOL);
+}
+exports.info = info;
+/**
+ * Begin an output group.
+ *
+ * Output until the next `groupEnd` will be foldable in this group
+ *
+ * @param name The name of the output group
+ */
+function startGroup(name) {
+    command_1.issue('group', name);
+}
+exports.startGroup = startGroup;
+/**
+ * End an output group.
+ */
+function endGroup() {
+    command_1.issue('endgroup');
+}
+exports.endGroup = endGroup;
+/**
+ * Wrap an asynchronous function call in a group.
+ *
+ * Returns the same type as the function itself.
+ *
+ * @param name The name of the group
+ * @param fn The function to wrap in the group
+ */
+function group(name, fn) {
+    return __awaiter(this, void 0, void 0, function* () {
+        startGroup(name);
+        let result;
+        try {
+            result = yield fn();
+        }
+        finally {
+            endGroup();
+        }
+        return result;
+    });
+}
+exports.group = group;
+//-----------------------------------------------------------------------
+// Wrapper action state
+//-----------------------------------------------------------------------
+/**
+ * Saves state for current action, the state can only be retrieved by this action's post job execution.
+ *
+ * @param     name     name of the state to store
+ * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function saveState(name, value) {
+    command_1.issueCommand('save-state', { name }, value);
+}
+exports.saveState = saveState;
+/**
+ * Gets the value of an state set by this action's main execution.
+ *
+ * @param     name     name of the state to get
+ * @returns   string
+ */
+function getState(name) {
+    return process.env[`STATE_${name}`] || '';
+}
+exports.getState = getState;
+//# sourceMappingURL=core.js.map
+
+/***/ }),
+
+/***/ 5939:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+// For internal use, subject to change.
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+// We use any as a valid input type
+/* eslint-disable @typescript-eslint/no-explicit-any */
+const fs = __importStar(__nccwpck_require__(5747));
+const os = __importStar(__nccwpck_require__(2087));
+const utils_1 = __nccwpck_require__(8091);
+function issueCommand(command, message) {
+    const filePath = process.env[`GITHUB_${command}`];
+    if (!filePath) {
+        throw new Error(`Unable to find environment variable for file command ${command}`);
+    }
+    if (!fs.existsSync(filePath)) {
+        throw new Error(`Missing file at path: ${filePath}`);
+    }
+    fs.appendFileSync(filePath, `${utils_1.toCommandValue(message)}${os.EOL}`, {
+        encoding: 'utf8'
+    });
+}
+exports.issueCommand = issueCommand;
+//# sourceMappingURL=file-command.js.map
+
+/***/ }),
+
+/***/ 8091:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+// We use any as a valid input type
+/* eslint-disable @typescript-eslint/no-explicit-any */
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+/**
+ * Sanitizes an input into a string so it can be passed into issueCommand safely
+ * @param input input to sanitize into a string
+ */
+function toCommandValue(input) {
+    if (input === null || input === undefined) {
+        return '';
+    }
+    else if (typeof input === 'string' || input instanceof String) {
+        return input;
+    }
+    return JSON.stringify(input);
+}
+exports.toCommandValue = toCommandValue;
+//# sourceMappingURL=utils.js.map
+
+/***/ }),
+
+/***/ 7897:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+var crypto = __nccwpck_require__(6417);
+
+var flags = {
+	NTLM_NegotiateUnicode                :  0x00000001,
+	NTLM_NegotiateOEM                    :  0x00000002,
+	NTLM_RequestTarget                   :  0x00000004,
+	NTLM_Unknown9                        :  0x00000008,
+	NTLM_NegotiateSign                   :  0x00000010,
+	NTLM_NegotiateSeal                   :  0x00000020,
+	NTLM_NegotiateDatagram               :  0x00000040,
+	NTLM_NegotiateLanManagerKey          :  0x00000080,
+	NTLM_Unknown8                        :  0x00000100,
+	NTLM_NegotiateNTLM                   :  0x00000200,
+	NTLM_NegotiateNTOnly                 :  0x00000400,
+	NTLM_Anonymous                       :  0x00000800,
+	NTLM_NegotiateOemDomainSupplied      :  0x00001000,
+	NTLM_NegotiateOemWorkstationSupplied :  0x00002000,
+	NTLM_Unknown6                        :  0x00004000,
+	NTLM_NegotiateAlwaysSign             :  0x00008000,
+	NTLM_TargetTypeDomain                :  0x00010000,
+	NTLM_TargetTypeServer                :  0x00020000,
+	NTLM_TargetTypeShare                 :  0x00040000,
+	NTLM_NegotiateExtendedSecurity       :  0x00080000,
+	NTLM_NegotiateIdentify               :  0x00100000,
+	NTLM_Unknown5                        :  0x00200000,
+	NTLM_RequestNonNTSessionKey          :  0x00400000,
+	NTLM_NegotiateTargetInfo             :  0x00800000,
+	NTLM_Unknown4                        :  0x01000000,
+	NTLM_NegotiateVersion                :  0x02000000,
+	NTLM_Unknown3                        :  0x04000000,
+	NTLM_Unknown2                        :  0x08000000,
+	NTLM_Unknown1                        :  0x10000000,
+	NTLM_Negotiate128                    :  0x20000000,
+	NTLM_NegotiateKeyExchange            :  0x40000000,
+	NTLM_Negotiate56                     :  0x80000000
+};
+var typeflags = {
+	NTLM_TYPE1_FLAGS : 	  flags.NTLM_NegotiateUnicode
+						+ flags.NTLM_NegotiateOEM
+						+ flags.NTLM_RequestTarget
+						+ flags.NTLM_NegotiateNTLM
+						+ flags.NTLM_NegotiateOemDomainSupplied
+						+ flags.NTLM_NegotiateOemWorkstationSupplied
+						+ flags.NTLM_NegotiateAlwaysSign
+						+ flags.NTLM_NegotiateExtendedSecurity
+						+ flags.NTLM_NegotiateVersion
+						+ flags.NTLM_Negotiate128
+						+ flags.NTLM_Negotiate56,
+
+	NTLM_TYPE2_FLAGS :    flags.NTLM_NegotiateUnicode
+						+ flags.NTLM_RequestTarget
+						+ flags.NTLM_NegotiateNTLM
+						+ flags.NTLM_NegotiateAlwaysSign
+						+ flags.NTLM_NegotiateExtendedSecurity
+						+ flags.NTLM_NegotiateTargetInfo
+						+ flags.NTLM_NegotiateVersion
+						+ flags.NTLM_Negotiate128
+						+ flags.NTLM_Negotiate56
+};
+
+function createType1Message(options){
+	var domain = escape(options.domain.toUpperCase());
+	var workstation = escape(options.workstation.toUpperCase());
+	var protocol = 'NTLMSSP\0';
+
+	var BODY_LENGTH = 40;
+
+	var type1flags = typeflags.NTLM_TYPE1_FLAGS;
+	if(!domain || domain === '')
+		type1flags = type1flags - flags.NTLM_NegotiateOemDomainSupplied;
+
+	var pos = 0;
+	var buf = new Buffer(BODY_LENGTH + domain.length + workstation.length);
+
+
+	buf.write(protocol, pos, protocol.length); pos += protocol.length; // protocol
+	buf.writeUInt32LE(1, pos); pos += 4;          // type 1
+	buf.writeUInt32LE(type1flags, pos); pos += 4; // TYPE1 flag
+
+	buf.writeUInt16LE(domain.length, pos); pos += 2; // domain length
+	buf.writeUInt16LE(domain.length, pos); pos += 2; // domain max length
+	buf.writeUInt32LE(BODY_LENGTH + workstation.length, pos); pos += 4; // domain buffer offset
+
+	buf.writeUInt16LE(workstation.length, pos); pos += 2; // workstation length
+	buf.writeUInt16LE(workstation.length, pos); pos += 2; // workstation max length
+	buf.writeUInt32LE(BODY_LENGTH, pos); pos += 4; // workstation buffer offset
+
+	buf.writeUInt8(5, pos); pos += 1;      //ProductMajorVersion
+	buf.writeUInt8(1, pos); pos += 1;      //ProductMinorVersion
+	buf.writeUInt16LE(2600, pos); pos += 2; //ProductBuild
+
+	buf.writeUInt8(0 , pos); pos += 1; //VersionReserved1
+	buf.writeUInt8(0 , pos); pos += 1; //VersionReserved2
+	buf.writeUInt8(0 , pos); pos += 1; //VersionReserved3
+	buf.writeUInt8(15, pos); pos += 1; //NTLMRevisionCurrent
+
+	buf.write(workstation, pos, workstation.length, 'ascii'); pos += workstation.length; // workstation string
+	buf.write(domain     , pos, domain.length     , 'ascii'); pos += domain.length;
+
+	return 'NTLM ' + buf.toString('base64');
+}
+
+function parseType2Message(rawmsg, callback){
+	var match = rawmsg.match(/NTLM (.+)?/);
+	if(!match || !match[1])
+		return callback(new Error("Couldn't find NTLM in the message type2 comming from the server"));
+
+	var buf = new Buffer(match[1], 'base64');
+
+	var msg = {};
+
+	msg.signature = buf.slice(0, 8);
+	msg.type = buf.readInt16LE(8);
+
+	if(msg.type != 2)
+		return callback(new Error("Server didn't return a type 2 message"));
+
+	msg.targetNameLen = buf.readInt16LE(12);
+	msg.targetNameMaxLen = buf.readInt16LE(14);
+	msg.targetNameOffset = buf.readInt32LE(16);
+	msg.targetName  = buf.slice(msg.targetNameOffset, msg.targetNameOffset + msg.targetNameMaxLen);
+
+    msg.negotiateFlags = buf.readInt32LE(20);
+    msg.serverChallenge = buf.slice(24, 32);
+    msg.reserved = buf.slice(32, 40);
+
+    if(msg.negotiateFlags & flags.NTLM_NegotiateTargetInfo){
+    	msg.targetInfoLen = buf.readInt16LE(40);
+    	msg.targetInfoMaxLen = buf.readInt16LE(42);
+    	msg.targetInfoOffset = buf.readInt32LE(44);
+    	msg.targetInfo = buf.slice(msg.targetInfoOffset, msg.targetInfoOffset + msg.targetInfoLen);
+    }
+	return msg;
+}
+
+function createType3Message(msg2, options){
+	var nonce = msg2.serverChallenge;
+	var username = options.username;
+	var password = options.password;
+	var negotiateFlags = msg2.negotiateFlags;
+
+	var isUnicode = negotiateFlags & flags.NTLM_NegotiateUnicode;
+	var isNegotiateExtendedSecurity = negotiateFlags & flags.NTLM_NegotiateExtendedSecurity;
+
+	var BODY_LENGTH = 72;
+
+	var domainName = escape(options.domain.toUpperCase());
+	var workstation = escape(options.workstation.toUpperCase());
+
+	var workstationBytes, domainNameBytes, usernameBytes, encryptedRandomSessionKeyBytes;
+
+	var encryptedRandomSessionKey = "";
+	if(isUnicode){
+		workstationBytes = new Buffer(workstation, 'utf16le');
+		domainNameBytes = new Buffer(domainName, 'utf16le');
+		usernameBytes = new Buffer(username, 'utf16le');
+		encryptedRandomSessionKeyBytes = new Buffer(encryptedRandomSessionKey, 'utf16le');
+	}else{
+		workstationBytes = new Buffer(workstation, 'ascii');
+		domainNameBytes = new Buffer(domainName, 'ascii');
+		usernameBytes = new Buffer(username, 'ascii');
+		encryptedRandomSessionKeyBytes = new Buffer(encryptedRandomSessionKey, 'ascii');
+	}
+
+	var lmChallengeResponse = calc_resp(create_LM_hashed_password_v1(password), nonce);
+	var ntChallengeResponse = calc_resp(create_NT_hashed_password_v1(password), nonce);
+
+	if(isNegotiateExtendedSecurity){
+		var pwhash = create_NT_hashed_password_v1(password);
+	 	var clientChallenge = "";
+	 	for(var i=0; i < 8; i++){
+	 		clientChallenge += String.fromCharCode( Math.floor(Math.random()*256) );
+	   	}
+	   	var clientChallengeBytes = new Buffer(clientChallenge, 'ascii');
+	    var challenges = ntlm2sr_calc_resp(pwhash, nonce, clientChallengeBytes);
+	    lmChallengeResponse = challenges.lmChallengeResponse;
+	    ntChallengeResponse = challenges.ntChallengeResponse;
+	}
+
+	var signature = 'NTLMSSP\0';
+
+	var pos = 0;
+	var buf = new Buffer(BODY_LENGTH + domainNameBytes.length + usernameBytes.length + workstationBytes.length + lmChallengeResponse.length + ntChallengeResponse.length + encryptedRandomSessionKeyBytes.length);
+
+	buf.write(signature, pos, signature.length); pos += signature.length;
+	buf.writeUInt32LE(3, pos); pos += 4;          // type 1
+
+	buf.writeUInt16LE(lmChallengeResponse.length, pos); pos += 2; // LmChallengeResponseLen
+	buf.writeUInt16LE(lmChallengeResponse.length, pos); pos += 2; // LmChallengeResponseMaxLen
+	buf.writeUInt32LE(BODY_LENGTH + domainNameBytes.length + usernameBytes.length + workstationBytes.length, pos); pos += 4; // LmChallengeResponseOffset
+
+	buf.writeUInt16LE(ntChallengeResponse.length, pos); pos += 2; // NtChallengeResponseLen
+	buf.writeUInt16LE(ntChallengeResponse.length, pos); pos += 2; // NtChallengeResponseMaxLen
+	buf.writeUInt32LE(BODY_LENGTH + domainNameBytes.length + usernameBytes.length + workstationBytes.length + lmChallengeResponse.length, pos); pos += 4; // NtChallengeResponseOffset
+
+	buf.writeUInt16LE(domainNameBytes.length, pos); pos += 2; // DomainNameLen
+	buf.writeUInt16LE(domainNameBytes.length, pos); pos += 2; // DomainNameMaxLen
+	buf.writeUInt32LE(BODY_LENGTH, pos); pos += 4; 			  // DomainNameOffset
+
+	buf.writeUInt16LE(usernameBytes.length, pos); pos += 2; // UserNameLen
+	buf.writeUInt16LE(usernameBytes.length, pos); pos += 2; // UserNameMaxLen
+	buf.writeUInt32LE(BODY_LENGTH + domainNameBytes.length, pos); pos += 4; // UserNameOffset
+
+	buf.writeUInt16LE(workstationBytes.length, pos); pos += 2; // WorkstationLen
+	buf.writeUInt16LE(workstationBytes.length, pos); pos += 2; // WorkstationMaxLen
+	buf.writeUInt32LE(BODY_LENGTH + domainNameBytes.length + usernameBytes.length, pos); pos += 4; // WorkstationOffset
+
+	buf.writeUInt16LE(encryptedRandomSessionKeyBytes.length, pos); pos += 2; // EncryptedRandomSessionKeyLen
+	buf.writeUInt16LE(encryptedRandomSessionKeyBytes.length, pos); pos += 2; // EncryptedRandomSessionKeyMaxLen
+	buf.writeUInt32LE(BODY_LENGTH + domainNameBytes.length + usernameBytes.length + workstationBytes.length + lmChallengeResponse.length + ntChallengeResponse.length, pos); pos += 4; // EncryptedRandomSessionKeyOffset
+
+	buf.writeUInt32LE(typeflags.NTLM_TYPE2_FLAGS, pos); pos += 4; // NegotiateFlags
+
+	buf.writeUInt8(5, pos); pos++; // ProductMajorVersion
+	buf.writeUInt8(1, pos); pos++; // ProductMinorVersion
+	buf.writeUInt16LE(2600, pos); pos += 2; // ProductBuild
+	buf.writeUInt8(0, pos); pos++; // VersionReserved1
+	buf.writeUInt8(0, pos); pos++; // VersionReserved2
+	buf.writeUInt8(0, pos); pos++; // VersionReserved3
+	buf.writeUInt8(15, pos); pos++; // NTLMRevisionCurrent
+
+	domainNameBytes.copy(buf, pos); pos += domainNameBytes.length;
+	usernameBytes.copy(buf, pos); pos += usernameBytes.length;
+	workstationBytes.copy(buf, pos); pos += workstationBytes.length;
+	lmChallengeResponse.copy(buf, pos); pos += lmChallengeResponse.length;
+	ntChallengeResponse.copy(buf, pos); pos += ntChallengeResponse.length;
+	encryptedRandomSessionKeyBytes.copy(buf, pos); pos += encryptedRandomSessionKeyBytes.length;
+
+	return 'NTLM ' + buf.toString('base64');
+}
+
+function create_LM_hashed_password_v1(password){
+	// fix the password length to 14 bytes
+	password = password.toUpperCase();
+	var passwordBytes = new Buffer(password, 'ascii');
+
+	var passwordBytesPadded = new Buffer(14);
+	passwordBytesPadded.fill("\0");
+	var sourceEnd = 14;
+	if(passwordBytes.length < 14) sourceEnd = passwordBytes.length;
+	passwordBytes.copy(passwordBytesPadded, 0, 0, sourceEnd);
+
+	// split into 2 parts of 7 bytes:
+	var firstPart = passwordBytesPadded.slice(0,7);
+	var secondPart = passwordBytesPadded.slice(7);
+
+	function encrypt(buf){
+		var key = insertZerosEvery7Bits(buf);
+		var des = crypto.createCipheriv('DES-ECB', key, '');
+		return des.update("KGS!@#$%"); // page 57 in [MS-NLMP]);
+	}
+
+	var firstPartEncrypted = encrypt(firstPart);
+	var secondPartEncrypted = encrypt(secondPart);
+
+	return Buffer.concat([firstPartEncrypted, secondPartEncrypted]);
+}
+
+function insertZerosEvery7Bits(buf){
+	var binaryArray = bytes2binaryArray(buf);
+	var newBinaryArray = [];
+	for(var i=0; i<binaryArray.length; i++){
+		newBinaryArray.push(binaryArray[i]);
+
+		if((i+1)%7 === 0){
+			newBinaryArray.push(0);
+		}
+	}
+	return binaryArray2bytes(newBinaryArray);
+}
+
+function bytes2binaryArray(buf){
+	var hex2binary = {
+		0: [0,0,0,0],
+		1: [0,0,0,1],
+		2: [0,0,1,0],
+		3: [0,0,1,1],
+		4: [0,1,0,0],
+		5: [0,1,0,1],
+		6: [0,1,1,0],
+		7: [0,1,1,1],
+		8: [1,0,0,0],
+		9: [1,0,0,1],
+		A: [1,0,1,0],
+		B: [1,0,1,1],
+		C: [1,1,0,0],
+		D: [1,1,0,1],
+		E: [1,1,1,0],
+		F: [1,1,1,1]
+	};
+
+	var hexString = buf.toString('hex').toUpperCase();
+	var array = [];
+	for(var i=0; i<hexString.length; i++){
+   		var hexchar = hexString.charAt(i);
+   		array = array.concat(hex2binary[hexchar]);
+   	}
+   	return array;
+}
+
+function binaryArray2bytes(array){
+	var binary2hex = {
+		'0000': 0,
+		'0001': 1,
+		'0010': 2,
+		'0011': 3,
+		'0100': 4,
+		'0101': 5,
+		'0110': 6,
+		'0111': 7,
+		'1000': 8,
+		'1001': 9,
+		'1010': 'A',
+		'1011': 'B',
+		'1100': 'C',
+		'1101': 'D',
+		'1110': 'E',
+		'1111': 'F'
+	};
+
+ 	var bufArray = [];
+
+	for(var i=0; i<array.length; i +=8 ){
+		if((i+7) > array.length)
+			break;
+
+		var binString1 = '' + array[i] + '' + array[i+1] + '' + array[i+2] + '' + array[i+3];
+		var binString2 = '' + array[i+4] + '' + array[i+5] + '' + array[i+6] + '' + array[i+7];
+   		var hexchar1 = binary2hex[binString1];
+   		var hexchar2 = binary2hex[binString2];
+
+   		var buf = new Buffer(hexchar1 + '' + hexchar2, 'hex');
+   		bufArray.push(buf);
+   	}
+
+   	return Buffer.concat(bufArray);
+}
+
+function create_NT_hashed_password_v1(password){
+	var buf = new Buffer(password, 'utf16le');
+	var md4 = crypto.createHash('md4');
+	md4.update(buf);
+	return new Buffer(md4.digest());
+}
+
+function calc_resp(password_hash, server_challenge){
+    // padding with zeros to make the hash 21 bytes long
+    var passHashPadded = new Buffer(21);
+    passHashPadded.fill("\0");
+    password_hash.copy(passHashPadded, 0, 0, password_hash.length);
+
+    var resArray = [];
+
+    var des = crypto.createCipheriv('DES-ECB', insertZerosEvery7Bits(passHashPadded.slice(0,7)), '');
+    resArray.push( des.update(server_challenge.slice(0,8)) );
+
+    des = crypto.createCipheriv('DES-ECB', insertZerosEvery7Bits(passHashPadded.slice(7,14)), '');
+    resArray.push( des.update(server_challenge.slice(0,8)) );
+
+    des = crypto.createCipheriv('DES-ECB', insertZerosEvery7Bits(passHashPadded.slice(14,21)), '');
+    resArray.push( des.update(server_challenge.slice(0,8)) );
+
+   	return Buffer.concat(resArray);
+}
+
+function ntlm2sr_calc_resp(responseKeyNT, serverChallenge, clientChallenge){
+	// padding with zeros to make the hash 16 bytes longer
+    var lmChallengeResponse = new Buffer(clientChallenge.length + 16);
+    lmChallengeResponse.fill("\0");
+    clientChallenge.copy(lmChallengeResponse, 0, 0, clientChallenge.length);
+
+    var buf = Buffer.concat([serverChallenge, clientChallenge]);
+    var md5 = crypto.createHash('md5');
+    md5.update(buf);
+    var sess = md5.digest();
+    var ntChallengeResponse = calc_resp(responseKeyNT, sess.slice(0,8));
+
+    return {
+    	lmChallengeResponse: lmChallengeResponse,
+    	ntChallengeResponse: ntChallengeResponse
+    };
+}
+
+exports.createType1Message = createType1Message;
+exports.parseType2Message = parseType2Message;
+exports.createType3Message = createType3Message;
+
+
+
+
+
+
+/***/ }),
+
+/***/ 2259:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+// module to handle cookies
+
+var urllib = __nccwpck_require__(8835);
+
+var SESSION_TIMEOUT = 1800; // 30 min
+
+module.exports = Cookies;
+
+/**
+ * Creates a biskviit cookie jar for managing cookie values in memory
+ *
+ * @constructor
+ * @param {Object} [options] Optional options object
+ */
+function Cookies(options) {
+    this.options = options || {};
+    this.cookies = [];
+}
+
+/**
+ * Stores a cookie string to the cookie storage
+ *
+ * @param {String} cookieStr Value from the 'Set-Cookie:' header
+ * @param {String} url Current URL
+ */
+Cookies.prototype.set = function (cookieStr, url) {
+    var urlparts = urllib.parse(url || '');
+    var cookie = this.parse(cookieStr);
+    var domain;
+
+    if (cookie.domain) {
+        domain = cookie.domain.replace(/^\./, '');
+
+        // do not allow cross origin cookies
+        if (
+            // can't be valid if the requested domain is shorter than current hostname
+            urlparts.hostname.length < domain.length ||
+
+            // prefix domains with dot to be sure that partial matches are not used
+            ('.' + urlparts.hostname).substr(-domain.length + 1) !== ('.' + domain)) {
+            cookie.domain = urlparts.hostname;
+        }
+    } else {
+        cookie.domain = urlparts.hostname;
+    }
+
+    if (!cookie.path) {
+        cookie.path = this.getPath(urlparts.pathname);
+    }
+
+    // if no expire date, then use sessionTimeout value
+    if (!cookie.expires) {
+        cookie.expires = new Date(Date.now() + (Number(this.options.sessionTimeout || SESSION_TIMEOUT) || SESSION_TIMEOUT) * 1000);
+    }
+
+    return this.add(cookie);
+};
+
+/**
+ * Returns cookie string for the 'Cookie:' header.
+ *
+ * @param {String} url URL to check for
+ * @returns {String} Cookie header or empty string if no matches were found
+ */
+Cookies.prototype.get = function (url) {
+    return this.list(url).map(function (cookie) {
+        return cookie.name + '=' + cookie.value;
+    }).join('; ');
+};
+
+/**
+ * Lists all valied cookie objects for the specified URL
+ *
+ * @param {String} url URL to check for
+ * @returns {Array} An array of cookie objects
+ */
+Cookies.prototype.list = function (url) {
+    var result = [];
+    var i;
+    var cookie;
+
+    for (i = this.cookies.length - 1; i >= 0; i--) {
+        cookie = this.cookies[i];
+
+        if (this.isExpired(cookie)) {
+            this.cookies.splice(i, i);
+            continue;
+        }
+
+        if (this.match(cookie, url)) {
+            result.unshift(cookie);
+        }
+    }
+
+    return result;
+};
+
+/**
+ * Parses cookie string from the 'Set-Cookie:' header
+ *
+ * @param {String} cookieStr String from the 'Set-Cookie:' header
+ * @returns {Object} Cookie object
+ */
+Cookies.prototype.parse = function (cookieStr) {
+    var cookie = {};
+
+    (cookieStr || '').toString().split(';').forEach(function (cookiePart) {
+        var valueParts = cookiePart.split('=');
+        var key = valueParts.shift().trim().toLowerCase();
+        var value = valueParts.join('=').trim();
+        var domain;
+
+        if (!key) {
+            // skip empty parts
+            return;
+        }
+
+        switch (key) {
+
+            case 'expires':
+                value = new Date(value);
+                // ignore date if can not parse it
+                if (value.toString() !== 'Invalid Date') {
+                    cookie.expires = value;
+                }
+                break;
+
+            case 'path':
+                cookie.path = value;
+                break;
+
+            case 'domain':
+                domain = value.toLowerCase();
+                if (domain.length && domain.charAt(0) !== '.') {
+                    domain = '.' + domain; // ensure preceeding dot for user set domains
+                }
+                cookie.domain = domain;
+                break;
+
+            case 'max-age':
+                cookie.expires = new Date(Date.now() + (Number(value) || 0) * 1000);
+                break;
+
+            case 'secure':
+                cookie.secure = true;
+                break;
+
+            case 'httponly':
+                cookie.httponly = true;
+                break;
+
+            default:
+                if (!cookie.name) {
+                    cookie.name = key;
+                    cookie.value = value;
+                }
+        }
+    });
+
+    return cookie;
+};
+
+/**
+ * Checks if a cookie object is valid for a specified URL
+ *
+ * @param {Object} cookie Cookie object
+ * @param {String} url URL to check for
+ * @returns {Boolean} true if cookie is valid for specifiec URL
+ */
+Cookies.prototype.match = function (cookie, url) {
+    var urlparts = urllib.parse(url || '');
+
+    // check if hostname matches
+    // .foo.com also matches subdomains, foo.com does not
+    if (urlparts.hostname !== cookie.domain && (cookie.domain.charAt(0) !== '.' || ('.' + urlparts.hostname).substr(-cookie.domain.length) !== cookie.domain)) {
+        return false;
+    }
+
+    // check if path matches
+    var path = this.getPath(urlparts.pathname);
+    if (path.substr(0, cookie.path.length) !== cookie.path) {
+        return false;
+    }
+
+    // check secure argument
+    if (cookie.secure && urlparts.protocol !== 'https:') {
+        return false;
+    }
+
+    return true;
+};
+
+/**
+ * Adds (or updates/removes if needed) a cookie object to the cookie storage
+ *
+ * @param {Object} cookie Cookie value to be stored
+ */
+Cookies.prototype.add = function (cookie) {
+    var i;
+    var len;
+
+    // nothing to do here
+    if (!cookie || !cookie.name) {
+        return false;
+    }
+
+    // overwrite if has same params
+    for (i = 0, len = this.cookies.length; i < len; i++) {
+        if (this.compare(this.cookies[i], cookie)) {
+
+            // check if the cookie needs to be removed instead
+            if (this.isExpired(cookie)) {
+                this.cookies.splice(i, 1); // remove expired/unset cookie
+                return false;
+            }
+
+            this.cookies[i] = cookie;
+            return true;
+        }
+    }
+
+    // add as new if not already expired
+    if (!this.isExpired(cookie)) {
+        this.cookies.push(cookie);
+    }
+
+    return true;
+};
+
+/**
+ * Checks if two cookie objects are the same
+ *
+ * @param {Object} a Cookie to check against
+ * @param {Object} b Cookie to check against
+ * @returns {Boolean} True, if the cookies are the same
+ */
+Cookies.prototype.compare = function (a, b) {
+    return a.name === b.name && a.path === b.path && a.domain === b.domain && a.secure === b.secure && a.httponly === a.httponly;
+};
+
+/**
+ * Checks if a cookie is expired
+ *
+ * @param {Object} cookie Cookie object to check against
+ * @returns {Boolean} True, if the cookie is expired
+ */
+Cookies.prototype.isExpired = function (cookie) {
+    return (cookie.expires && cookie.expires < new Date()) || !cookie.value;
+};
+
+/**
+ * Returns normalized cookie path for an URL path argument
+ *
+ * @param {String} pathname
+ * @returns {String} Normalized path
+ */
+Cookies.prototype.getPath = function (pathname) {
+    var path = (pathname || '/').split('/');
+    path.pop(); // remove filename part
+    path = path.join('/').trim();
+
+    // ensure path prefix /
+    if (path.charAt(0) !== '/') {
+        path = '/' + path;
+    }
+
+    // ensure path suffix /
+    if (path.substr(-1) !== '/') {
+        path += '/';
+    }
+
+    return path;
+};
+
+
+/***/ }),
+
+/***/ 7308:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+var http = __nccwpck_require__(8605);
+var https = __nccwpck_require__(7211);
+var urllib = __nccwpck_require__(8835);
+var zlib = __nccwpck_require__(8761);
+var PassThrough = __nccwpck_require__(2413).PassThrough;
+var Cookies = __nccwpck_require__(2259);
+
+var MAX_REDIRECTS = 5;
+
+module.exports = function (url, options) {
+    return fetch(url, options);
+};
+
+module.exports.Cookies = Cookies;
+
+function fetch(url, options) {
+    options = options || {};
+
+    options.fetchRes = options.fetchRes || new PassThrough();
+    options.cookies = options.cookies || new Cookies();
+    options.redirects = options.redirects || 0;
+    options.maxRedirects = isNaN(options.maxRedirects) ? MAX_REDIRECTS : options.maxRedirects;
+
+    if (options.cookie) {
+        [].concat(options.cookie || []).forEach(function (cookie) {
+            options.cookies.set(cookie, url);
+        });
+        options.cookie = false;
+    }
+
+    var fetchRes = options.fetchRes;
+    var parsed = urllib.parse(url);
+    var method = (options.method || '').toString().trim().toUpperCase() || 'GET';
+    var finished = false;
+    var cookies;
+    var body;
+
+    var handler = parsed.protocol === 'https:' ? https : http;
+
+    var headers = {
+        'accept-encoding': 'gzip,deflate'
+    };
+
+    Object.keys(options.headers || {}).forEach(function (key) {
+        headers[key.toLowerCase().trim()] = options.headers[key];
+    });
+
+    if (options.userAgent) {
+        headers['User-Agent'] = options.userAgent;
+    }
+
+    if (parsed.auth) {
+        headers.Authorization = 'Basic ' + new Buffer(parsed.auth).toString('base64');
+    }
+
+    if ((cookies = options.cookies.get(url))) {
+        headers.cookie = cookies;
+    }
+
+    if (options.body) {
+        if (options.contentType !== false) {
+            headers['Content-Type'] = options.contentType || 'application/x-www-form-urlencoded';
+        }
+
+        if (typeof options.body.pipe === 'function') {
+            // it's a stream
+            headers['Transfer-Encoding'] = 'chunked';
+            body = options.body;
+            body.on('error', function (err) {
+                if (finished) {
+                    return;
+                }
+                finished = true;
+                fetchRes.emit('error', err);
+            });
+        } else {
+            if (options.body instanceof Buffer) {
+                body = options.body;
+            } else if (typeof options.body === 'object') {
+                body = new Buffer(Object.keys(options.body).map(function (key) {
+                    var value = options.body[key].toString().trim();
+                    return encodeURIComponent(key) + '=' + encodeURIComponent(value);
+                }).join('&'));
+            } else {
+                body = new Buffer(options.body.toString().trim());
+            }
+
+            headers['Content-Type'] = options.contentType || 'application/x-www-form-urlencoded';
+            headers['Content-Length'] = body.length;
+        }
+        // if method is not provided, use POST instead of GET
+        method = (options.method || '').toString().trim().toUpperCase() || 'POST';
+    }
+
+    var req;
+    var reqOptions = {
+        method: method,
+        host: parsed.hostname,
+        path: parsed.path,
+        port: parsed.port ? parsed.port : (parsed.protocol === 'https:' ? 443 : 80),
+        headers: headers,
+        rejectUnauthorized: false,
+        agent: false
+    };
+
+    if (options.tls) {
+        Object.keys(options.tls).forEach(function (key) {
+            reqOptions[key] = options.tls[key];
+        });
+    }
+
+    try {
+        req = handler.request(reqOptions);
+    } catch (E) {
+        finished = true;
+        setImmediate(function () {
+            fetchRes.emit('error', E);
+        });
+        return fetchRes;
+    }
+
+    if (options.timeout) {
+        req.setTimeout(options.timeout, function () {
+            if (finished) {
+                return;
+            }
+            finished = true;
+            req.abort();
+            fetchRes.emit('error', new Error('Request Tiemout'));
+        });
+    }
+
+    req.on('error', function (err) {
+        if (finished) {
+            return;
+        }
+        finished = true;
+        fetchRes.emit('error', err);
+    });
+
+    req.on('response', function (res) {
+        var inflate;
+
+        if (finished) {
+            return;
+        }
+
+        switch (res.headers['content-encoding']) {
+            case 'gzip':
+            case 'deflate':
+                inflate = zlib.createUnzip();
+                break;
+        }
+
+        if (res.headers['set-cookie']) {
+            [].concat(res.headers['set-cookie'] || []).forEach(function (cookie) {
+                options.cookies.set(cookie, url);
+            });
+        }
+
+        if ([301, 302, 303, 307, 308].indexOf(res.statusCode) >= 0 && res.headers.location) {
+            // redirect
+            options.redirects++;
+            if (options.redirects > options.maxRedirects) {
+                finished = true;
+                fetchRes.emit('error', new Error('Maximum redirect count exceeded'));
+                req.abort();
+                return;
+            }
+            return fetch(urllib.resolve(url, res.headers.location), options);
+        }
+
+        if (res.statusCode >= 300) {
+            finished = true;
+            fetchRes.emit('error', new Error('Invalid status code ' + res.statusCode));
+            req.abort();
+            return;
+        }
+
+        res.on('error', function (err) {
+            if (finished) {
+                return;
+            }
+            finished = true;
+            fetchRes.emit('error', err);
+            req.abort();
+        });
+
+        if (inflate) {
+            res.pipe(inflate).pipe(fetchRes);
+            inflate.on('error', function (err) {
+                if (finished) {
+                    return;
+                }
+                finished = true;
+                fetchRes.emit('error', err);
+                req.abort();
+            });
+        } else {
+            res.pipe(fetchRes);
+        }
+    });
+
+    setImmediate(function () {
+        if (body) {
+            try {
+                if (typeof body.pipe === 'function') {
+                    return body.pipe(req);
+                } else {
+                    req.write(body);
+                }
+            } catch (err) {
+                finished = true;
+                fetchRes.emit('error', err);
+                return;
+            }
+        }
+        req.end();
+    });
+
+    return fetchRes;
+}
+
+
+/***/ }),
+
+/***/ 9400:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+var urllib = __nccwpck_require__(8835);
+var util = __nccwpck_require__(1669);
+var fs = __nccwpck_require__(5747);
+var fetch = __nccwpck_require__(7308);
+
+/**
+ * Parses connection url to a structured configuration object
+ *
+ * @param {String} str Connection url
+ * @return {Object} Configuration object
+ */
+module.exports.parseConnectionUrl = function (str) {
+    str = str || '';
+    var options = {};
+
+    [urllib.parse(str, true)].forEach(function (url) {
+        var auth;
+
+        switch (url.protocol) {
+            case 'smtp:':
+                options.secure = false;
+                break;
+            case 'smtps:':
+                options.secure = true;
+                break;
+            case 'direct:':
+                options.direct = true;
+                break;
+        }
+
+        if (!isNaN(url.port) && Number(url.port)) {
+            options.port = Number(url.port);
+        }
+
+        if (url.hostname) {
+            options.host = url.hostname;
+        }
+
+        if (url.auth) {
+            auth = url.auth.split(':');
+
+            if (!options.auth) {
+                options.auth = {};
+            }
+
+            options.auth.user = auth.shift();
+            options.auth.pass = auth.join(':');
+        }
+
+        Object.keys(url.query || {}).forEach(function (key) {
+            var obj = options;
+            var lKey = key;
+            var value = url.query[key];
+
+            if (!isNaN(value)) {
+                value = Number(value);
+            }
+
+            switch (value) {
+                case 'true':
+                    value = true;
+                    break;
+                case 'false':
+                    value = false;
+                    break;
+            }
+
+            // tls is nested object
+            if (key.indexOf('tls.') === 0) {
+                lKey = key.substr(4);
+                if (!options.tls) {
+                    options.tls = {};
+                }
+                obj = options.tls;
+            } else if (key.indexOf('.') >= 0) {
+                // ignore nested properties besides tls
+                return;
+            }
+
+            if (!(lKey in obj)) {
+                obj[lKey] = value;
+            }
+        });
+    });
+
+    return options;
+};
+
+/**
+ * Returns a bunyan-compatible logger interface. Uses either provided logger or
+ * creates a default console logger
+ *
+ * @param {Object} [options] Options object that might include 'logger' value
+ * @return {Object} bunyan compatible logger
+ */
+module.exports.getLogger = function (options) {
+    options = options || {};
+
+    if (!options.logger) {
+        // use vanity logger
+        return {
+            info: function () {},
+            debug: function () {},
+            error: function () {}
+        };
+    }
+
+    if (options.logger === true) {
+        // create console logger
+        return createDefaultLogger();
+    }
+
+    // return whatever was passed
+    return options.logger;
+};
+
+/**
+ * Wrapper for creating a callback than either resolves or rejects a promise
+ * based on input
+ *
+ * @param {Function} resolve Function to run if callback is called
+ * @param {Function} reject Function to run if callback ends with an error
+ */
+module.exports.callbackPromise = function (resolve, reject) {
+    return function () {
+        var args = Array.prototype.slice.call(arguments);
+        var err = args.shift();
+        if (err) {
+            reject(err);
+        } else {
+            resolve.apply(null, args);
+        }
+    };
+};
+
+/**
+ * Resolves a String or a Buffer value for content value. Useful if the value
+ * is a Stream or a file or an URL. If the value is a Stream, overwrites
+ * the stream object with the resolved value (you can't stream a value twice).
+ *
+ * This is useful when you want to create a plugin that needs a content value,
+ * for example the `html` or `text` value as a String or a Buffer but not as
+ * a file path or an URL.
+ *
+ * @param {Object} data An object or an Array you want to resolve an element for
+ * @param {String|Number} key Property name or an Array index
+ * @param {Function} callback Callback function with (err, value)
+ */
+module.exports.resolveContent = function (data, key, callback) {
+    var promise;
+
+    if (!callback && typeof Promise === 'function') {
+        promise = new Promise(function (resolve, reject) {
+            callback = module.exports.callbackPromise(resolve, reject);
+        });
+    }
+
+    var content = data && data[key] && data[key].content || data[key];
+    var contentStream;
+    var encoding = (typeof data[key] === 'object' && data[key].encoding || 'utf8')
+        .toString()
+        .toLowerCase()
+        .replace(/[-_\s]/g, '');
+
+    if (!content) {
+        return callback(null, content);
+    }
+
+    if (typeof content === 'object') {
+        if (typeof content.pipe === 'function') {
+            return resolveStream(content, function (err, value) {
+                if (err) {
+                    return callback(err);
+                }
+                // we can't stream twice the same content, so we need
+                // to replace the stream object with the streaming result
+                data[key] = value;
+                callback(null, value);
+            });
+        } else if (/^https?:\/\//i.test(content.path || content.href)) {
+            contentStream = fetch(content.path || content.href);
+            return resolveStream(contentStream, callback);
+        } else if (/^data:/i.test(content.path || content.href)) {
+            var parts = (content.path || content.href).match(/^data:((?:[^;]*;)*(?:[^,]*)),(.*)$/i);
+            if (!parts) {
+                return callback(null, new Buffer(0));
+            }
+            return callback(null, /\bbase64$/i.test(parts[1]) ? new Buffer(parts[2], 'base64') : new Buffer(decodeURIComponent(parts[2])));
+        } else if (content.path) {
+            return resolveStream(fs.createReadStream(content.path), callback);
+        }
+    }
+
+    if (typeof data[key].content === 'string' && ['utf8', 'usascii', 'ascii'].indexOf(encoding) < 0) {
+        content = new Buffer(data[key].content, encoding);
+    }
+
+    // default action, return as is
+    setImmediate(callback.bind(null, null, content));
+
+    return promise;
+};
+
+/**
+ * Streams a stream value into a Buffer
+ *
+ * @param {Object} stream Readable stream
+ * @param {Function} callback Callback function with (err, value)
+ */
+function resolveStream(stream, callback) {
+    var responded = false;
+    var chunks = [];
+    var chunklen = 0;
+
+    stream.on('error', function (err) {
+        if (responded) {
+            return;
+        }
+
+        responded = true;
+        callback(err);
+    });
+
+    stream.on('readable', function () {
+        var chunk;
+        while ((chunk = stream.read()) !== null) {
+            chunks.push(chunk);
+            chunklen += chunk.length;
+        }
+    });
+
+    stream.on('end', function () {
+        if (responded) {
+            return;
+        }
+        responded = true;
+
+        var value;
+
+        try {
+            value = Buffer.concat(chunks, chunklen);
+        } catch (E) {
+            return callback(E);
+        }
+        callback(null, value);
+    });
+}
+
+/**
+ * Generates a bunyan-like logger that prints to console
+ *
+ * @returns {Object} Bunyan logger instance
+ */
+function createDefaultLogger() {
+
+    var logger = {
+        _print: function ( /* level, message */ ) {
+            var args = Array.prototype.slice.call(arguments);
+            var level = args.shift();
+            var message;
+
+            if (args.length > 1) {
+                message = util.format.apply(util, args);
+            } else {
+                message = args.shift();
+            }
+
+            console.log('[%s] %s: %s',
+                new Date().toISOString().substr(0, 19).replace(/T/, ' '),
+                level.toUpperCase(),
+                message);
+        }
+    };
+
+    logger.info = logger._print.bind(null, 'info');
+    logger.debug = logger._print.bind(null, 'debug');
+    logger.error = logger._print.bind(null, 'error');
+
+    return logger;
+}
+
+
+/***/ }),
+
+/***/ 4454:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+var SMTPConnection = __nccwpck_require__(9202);
+var packageData = __nccwpck_require__(5366);
+var wellknown = __nccwpck_require__(9437);
+var shared = __nccwpck_require__(9400);
+
+var EventEmitter = __nccwpck_require__(8614).EventEmitter;
+var util = __nccwpck_require__(1669);
+
+// expose to the world
+module.exports = function (options) {
+    return new SMTPTransport(options);
+};
+
+/**
+ * Creates a SMTP transport object for Nodemailer
+ *
+ * @constructor
+ * @param {Object} options Connection options
+ */
+function SMTPTransport(options) {
+    EventEmitter.call(this);
+
+    options = options || {};
+    if (typeof options === 'string') {
+        options = {
+            url: options
+        };
+    }
+
+    var urlData;
+    var service = options.service;
+
+    if (typeof options.getSocket === 'function') {
+        this.getSocket = options.getSocket;
+    }
+
+    if (options.url) {
+        urlData = shared.parseConnectionUrl(options.url);
+        service = service || urlData.service;
+    }
+
+    this.options = assign(
+        false, // create new object
+        options, // regular options
+        urlData, // url options
+        service && wellknown(service) // wellknown options
+    );
+
+    this.logger = shared.getLogger(this.options);
+
+    // temporary object
+    var connection = new SMTPConnection(this.options);
+
+    this.name = 'SMTP';
+    this.version = packageData.version + '[client:' + connection.version + ']';
+}
+util.inherits(SMTPTransport, EventEmitter);
+
+/**
+ * Placeholder function for creating proxy sockets. This method immediatelly returns
+ * without a socket
+ *
+ * @param {Object} options Connection options
+ * @param {Function} callback Callback function to run with the socket keys
+ */
+SMTPTransport.prototype.getSocket = function (options, callback) {
+    // return immediatelly
+    return callback(null, false);
+};
+
+/**
+ * Sends an e-mail using the selected settings
+ *
+ * @param {Object} mail Mail object
+ * @param {Function} callback Callback function
+ */
+SMTPTransport.prototype.send = function (mail, callback) {
+
+    this.getSocket(this.options, function (err, socketOptions) {
+        if (err) {
+            return callback(err);
+        }
+
+        var options = this.options;
+        if (socketOptions && socketOptions.connection) {
+            this.logger.info('Using proxied socket from %s:%s to %s:%s', socketOptions.connection.remoteAddress, socketOptions.connection.remotePort, options.host || '', options.port || '');
+            // only copy options if we need to modify it
+            options = assign(false, options);
+            Object.keys(socketOptions).forEach(function (key) {
+                options[key] = socketOptions[key];
+            });
+        }
+
+        var connection = new SMTPConnection(options);
+        var returned = false;
+
+        connection.once('error', function (err) {
+            if (returned) {
+                return;
+            }
+            returned = true;
+            connection.close();
+            return callback(err);
+        });
+
+        connection.once('end', function () {
+            if (returned) {
+                return;
+            }
+            returned = true;
+            return callback(new Error('Connection closed'));
+        });
+
+        var sendMessage = function () {
+            var envelope = mail.message.getEnvelope();
+            var messageId = (mail.message.getHeader('message-id') || '').replace(/[<>\s]/g, '');
+            var recipients = [].concat(envelope.to || []);
+            if (recipients.length > 3) {
+                recipients.push('...and ' + recipients.splice(2).length + ' more');
+            }
+
+            this.logger.info('Sending message <%s> to <%s>', messageId, recipients.join(', '));
+
+            connection.send(envelope, mail.message.createReadStream(), function (err, info) {
+                if (returned) {
+                    return;
+                }
+                returned = true;
+
+                connection.close();
+                if (err) {
+                    return callback(err);
+                }
+                info.envelope = {
+                    from: envelope.from,
+                    to: envelope.to
+                };
+                info.messageId = messageId;
+                return callback(null, info);
+            });
+        }.bind(this);
+
+        connection.connect(function () {
+            if (returned) {
+                return;
+            }
+
+            if (this.options.auth) {
+                connection.login(this.options.auth, function (err) {
+                    if (returned) {
+                        return;
+                    }
+
+                    if (err) {
+                        returned = true;
+                        connection.close();
+                        return callback(err);
+                    }
+
+                    sendMessage();
+                });
+            } else {
+                sendMessage();
+            }
+        }.bind(this));
+    }.bind(this));
+};
+
+/**
+ * Verifies SMTP configuration
+ *
+ * @param {Function} callback Callback function
+ */
+SMTPTransport.prototype.verify = function (callback) {
+    var promise;
+
+    if (!callback && typeof Promise === 'function') {
+        promise = new Promise(function (resolve, reject) {
+            callback = shared.callbackPromise(resolve, reject);
+        });
+    }
+
+    this.getSocket(this.options, function (err, socketOptions) {
+        if (err) {
+            return callback(err);
+        }
+
+        var options = this.options;
+        if (socketOptions && socketOptions.connection) {
+            this.logger.info('Using proxied socket from %s:%s', socketOptions.connection.remoteAddress, socketOptions.connection.remotePort);
+            options = assign(false, options);
+            Object.keys(socketOptions).forEach(function (key) {
+                options[key] = socketOptions[key];
+            });
+        }
+
+        var connection = new SMTPConnection(options);
+        var returned = false;
+
+        connection.once('error', function (err) {
+            if (returned) {
+                return;
+            }
+            returned = true;
+            connection.close();
+            return callback(err);
+        });
+
+        connection.once('end', function () {
+            if (returned) {
+                return;
+            }
+            returned = true;
+            return callback(new Error('Connection closed'));
+        });
+
+        var finalize = function () {
+            if (returned) {
+                return;
+            }
+            returned = true;
+            connection.quit();
+            return callback(null, true);
+        };
+
+        connection.connect(function () {
+            if (returned) {
+                return;
+            }
+
+            if (this.options.auth) {
+                connection.login(this.options.auth, function (err) {
+                    if (returned) {
+                        return;
+                    }
+
+                    if (err) {
+                        returned = true;
+                        connection.close();
+                        return callback(err);
+                    }
+
+                    finalize();
+                });
+            } else {
+                finalize();
+            }
+        }.bind(this));
+    }.bind(this));
+
+    return promise;
+};
+
+/**
+ * Copies properties from source objects to target objects
+ */
+function assign( /* target, ... sources */ ) {
+    var args = Array.prototype.slice.call(arguments);
+    var target = args.shift() || {};
+
+    args.forEach(function (source) {
+        Object.keys(source || {}).forEach(function (key) {
+            if (['tls', 'auth'].indexOf(key) >= 0 && source[key] && typeof source[key] === 'object') {
+                // tls and auth are special keys that need to be enumerated separately
+                // other objects are passed as is
+                if (!target[key]) {
+                    // esnure that target has this key
+                    target[key] = {};
+                }
+                Object.keys(source[key]).forEach(function (subKey) {
+                    target[key][subKey] = source[key][subKey];
+                });
+            } else {
+                target[key] = source[key];
+            }
+        });
+    });
+    return target;
+}
+
+
+/***/ }),
+
+/***/ 9437:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+"use strict";
+
+
+var services = __nccwpck_require__(7335);
+var normalized = {};
+
+Object.keys(services).forEach(function(key) {
+    var service = services[key];
+
+    normalized[normalizeKey(key)] = normalizeService(service);
+
+    [].concat(service.aliases || []).forEach(function(alias) {
+        normalized[normalizeKey(alias)] = normalizeService(service);
+    });
+
+    [].concat(service.domains || []).forEach(function(domain) {
+        normalized[normalizeKey(domain)] = normalizeService(service);
+    });
+});
+
+function normalizeKey(key) {
+    return key.replace(/[^a-zA-Z0-9.\-]/g, '').toLowerCase();
+}
+
+function normalizeService(service) {
+    var filter = ['domains', 'aliases'];
+    var response = {};
+
+    Object.keys(service).forEach(function(key) {
+        if (filter.indexOf(key) < 0) {
+            response[key] = service[key];
+        }
+    });
+
+    return response;
+}
+
+/**
+ * Resolves SMTP config for given key. Key can be a name (like 'Gmail'), alias (like 'Google Mail') or
+ * an email address (like 'test@googlemail.com').
+ *
+ * @param {String} key [description]
+ * @returns {Object} SMTP config or false if not found
+ */
+module.exports = function(key) {
+    key = normalizeKey(key.split('@').pop());
+    return normalized[key] || false;
+};
 
 /***/ }),
 
@@ -12709,18 +14671,1572 @@ module.exports = XOAuth2;
 
 /***/ }),
 
-/***/ 5518:
-/***/ ((module) => {
+/***/ 4472:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-module.exports = eval("require")("@actions/core");
+"use strict";
+
+
+var stream = __nccwpck_require__(2413);
+var Transform = stream.Transform;
+var util = __nccwpck_require__(1669);
+
+module.exports = DataStream;
+
+/**
+ * Escapes dots in the beginning of lines. Ends the stream with <CR><LF>.<CR><LF>
+ * Also makes sure that only <CR><LF> sequences are used for linebreaks
+ *
+ * @param {Object} options Stream options
+ */
+function DataStream(options) {
+    // init Transform
+    this.options = options || {};
+    this._curLine = '';
+
+    this.inByteCount = 0;
+    this.outByteCount = 0;
+    this.lastByte = false;
+
+    Transform.call(this, this.options);
+}
+util.inherits(DataStream, Transform);
+
+/**
+ * Escapes dots
+ */
+DataStream.prototype._transform = function (chunk, encoding, done) {
+    var chunks = [];
+    var chunklen = 0;
+    var i, len, lastPos = 0;
+    var buf;
+
+    if (!chunk || !chunk.length) {
+        return done();
+    }
+
+    if (typeof chunk === 'string') {
+        chunk = new Buffer(chunk);
+    }
+
+    this.inByteCount += chunk.length;
+
+    for (i = 0, len = chunk.length; i < len; i++) {
+        if (chunk[i] === 0x2E) { // .
+            if (
+                (i && chunk[i - 1] === 0x0A) ||
+                (!i && (!this.lastByte || this.lastByte === 0x0A))
+            ) {
+                buf = chunk.slice(lastPos, i + 1);
+                chunks.push(buf);
+                chunks.push(new Buffer('.'));
+                chunklen += buf.length + 1;
+                lastPos = i + 1;
+            }
+        } else if (chunk[i] === 0x0A) { // .
+            if (
+                (i && chunk[i - 1] !== 0x0D) ||
+                (!i && this.lastByte !== 0x0D)
+            ) {
+                if (i > lastPos) {
+                    buf = chunk.slice(lastPos, i);
+                    chunks.push(buf);
+                    chunklen += buf.length + 2;
+                } else {
+                    chunklen += 2;
+                }
+                chunks.push(new Buffer('\r\n'));
+                lastPos = i + 1;
+            }
+        }
+    }
+
+    if (chunklen) {
+        // add last piece
+        if (lastPos < chunk.length) {
+            buf = chunk.slice(lastPos);
+            chunks.push(buf);
+            chunklen += buf.length;
+        }
+
+        this.outByteCount += chunklen;
+        this.push(Buffer.concat(chunks, chunklen));
+    } else {
+        this.outByteCount += chunk.length;
+        this.push(chunk);
+    }
+
+    this.lastByte = chunk[chunk.length - 1];
+    done();
+};
+
+/**
+ * Finalizes the stream with a dot on a single line
+ */
+DataStream.prototype._flush = function (done) {
+    var buf;
+    if (this.lastByte === 0x0A) {
+        buf = new Buffer('.\r\n');
+    } else if (this.lastByte === 0x0D) {
+        buf = new Buffer('\n.\r\n');
+    } else {
+        buf = new Buffer('\r\n.\r\n');
+    }
+    this.outByteCount += buf.length;
+    this.push(buf);
+    done();
+};
 
 
 /***/ }),
 
-/***/ 1:
-/***/ ((module) => {
+/***/ 9202:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-module.exports = eval("require")("nodemailer-smtp-transport");
+"use strict";
+
+
+var packageInfo = __nccwpck_require__(987);
+var EventEmitter = __nccwpck_require__(8614).EventEmitter;
+var util = __nccwpck_require__(1669);
+var net = __nccwpck_require__(1631);
+var tls = __nccwpck_require__(4016);
+var os = __nccwpck_require__(2087);
+var crypto = __nccwpck_require__(6417);
+var DataStream = __nccwpck_require__(4472);
+var PassThrough = __nccwpck_require__(2413).PassThrough;
+var shared = __nccwpck_require__(9400);
+var ntlm = __nccwpck_require__(7897);
+
+// default timeout values in ms
+var CONNECTION_TIMEOUT = 2 * 60 * 1000; // how much to wait for the connection to be established
+var SOCKET_TIMEOUT = 10 * 60 * 1000; // how much to wait for socket inactivity before disconnecting the client
+var GREETING_TIMEOUT = 30 * 1000; // how much to wait after connection is established but SMTP greeting is not receieved
+
+module.exports = SMTPConnection;
+
+/**
+ * Generates a SMTP connection object
+ *
+ * Optional options object takes the following possible properties:
+ *
+ *  * **port** - is the port to connect to (defaults to 25 or 465)
+ *  * **host** - is the hostname or IP address to connect to (defaults to 'localhost')
+ *  * **secure** - use SSL
+ *  * **ignoreTLS** - ignore server support for STARTTLS
+ *  * **requireTLS** - forces the client to use STARTTLS
+ *  * **name** - the name of the client server
+ *  * **localAddress** - outbound address to bind to (see: http://nodejs.org/api/net.html#net_net_connect_options_connectionlistener)
+ *  * **greetingTimeout** - Time to wait in ms until greeting message is received from the server (defaults to 10000)
+ *  * **connectionTimeout** - how many milliseconds to wait for the connection to establish
+ *  * **socketTimeout** - Time of inactivity until the connection is closed (defaults to 1 hour)
+ *  * **lmtp** - if true, uses LMTP instead of SMTP protocol
+ *  * **logger** - bunyan compatible logger interface
+ *  * **debug** - if true pass SMTP traffic to the logger
+ *  * **tls** - options for createCredentials
+ *  * **socket** - existing socket to use instead of creating a new one (see: http://nodejs.org/api/net.html#net_class_net_socket)
+ *  * **secured** - boolean indicates that the provided socket has already been upgraded to tls
+ *
+ * @constructor
+ * @namespace SMTP Client module
+ * @param {Object} [options] Option properties
+ */
+function SMTPConnection(options) {
+    EventEmitter.call(this);
+
+    this.id = crypto.randomBytes(8).toString('base64').replace(/\W/g, '');
+    this.stage = 'init';
+
+    this.options = options || {};
+
+    this.secureConnection = !!this.options.secure;
+    this.alreadySecured = !!this.options.secured;
+
+    this.port = this.options.port || (this.secureConnection ? 465 : 25);
+    this.host = this.options.host || 'localhost';
+
+    if (typeof this.options.secure === 'undefined' && this.port === 465) {
+        // if secure option is not set but port is 465, then default to secure
+        this.secureConnection = true;
+    }
+
+    this.name = this.options.name || this._getHostname();
+
+    this.logger = shared.getLogger(this.options);
+
+    /**
+     * Expose version nr, just for the reference
+     * @type {String}
+     */
+    this.version = packageInfo.version;
+
+    /**
+     * If true, then the user is authenticated
+     * @type {Boolean}
+     */
+    this.authenticated = false;
+
+    /**
+     * If set to true, this instance is no longer active
+     * @private
+     */
+    this.destroyed = false;
+
+    /**
+     * Defines if the current connection is secure or not. If not,
+     * STARTTLS can be used if available
+     * @private
+     */
+    this.secure = !!this.secureConnection;
+
+    /**
+     * Store incomplete messages coming from the server
+     * @private
+     */
+    this._remainder = '';
+
+    /**
+     * Unprocessed responses from the server
+     * @type {Array}
+     */
+    this._responseQueue = [];
+
+    /**
+     * The socket connecting to the server
+     * @publick
+     */
+    this._socket = false;
+
+    /**
+     * Lists supported auth mechanisms
+     * @private
+     */
+    this._supportedAuth = [];
+
+    /**
+     * Includes current envelope (from, to)
+     * @private
+     */
+    this._envelope = false;
+
+    /**
+     * Lists supported extensions
+     * @private
+     */
+    this._supportedExtensions = [];
+
+    /**
+     * Defines the maximum allowed size for a single message
+     * @private
+     */
+    this._maxAllowedSize = 0;
+
+    /**
+     * Function queue to run if a data chunk comes from the server
+     * @private
+     */
+    this._responseActions = [];
+    this._recipientQueue = [];
+
+    /**
+     * Timeout variable for waiting the greeting
+     * @private
+     */
+    this._greetingTimeout = false;
+
+    /**
+     * Timeout variable for waiting the connection to start
+     * @private
+     */
+    this._connectionTimeout = false;
+
+    /**
+     * If the socket is deemed already closed
+     * @private
+     */
+    this._destroyed = false;
+
+    /**
+     * If the socket is already being closed
+     * @private
+     */
+    this._closing = false;
+}
+util.inherits(SMTPConnection, EventEmitter);
+
+/**
+ * Creates a connection to a SMTP server and sets up connection
+ * listener
+ */
+SMTPConnection.prototype.connect = function (connectCallback) {
+    if (typeof connectCallback === 'function') {
+        this.once('connect', function () {
+            this.logger.debug('[%s] SMTP handshake finished', this.id);
+            connectCallback();
+        }.bind(this));
+    }
+
+    var opts = {
+        port: this.port,
+        host: this.host
+    };
+
+    if (this.options.localAddress) {
+        opts.localAddress = this.options.localAddress;
+    }
+
+    if (this.options.connection) {
+        // connection is already opened
+        this._socket = this.options.connection;
+        if (this.secureConnection && !this.alreadySecured) {
+            setImmediate(this._upgradeConnection.bind(this, function (err) {
+                if (err) {
+                    this._onError(new Error('Error initiating TLS - ' + (err.message || err)), 'ETLS', false, 'CONN');
+                    return;
+                }
+                this._onConnect();
+            }.bind(this)));
+        } else {
+            setImmediate(this._onConnect.bind(this));
+        }
+    } else if (this.options.socket) {
+        // socket object is set up but not yet connected
+        this._socket = this.options.socket;
+        try {
+            this._socket.connect(this.port, this.host, this._onConnect.bind(this));
+        } catch (E) {
+            return setImmediate(this._onError.bind(this, E, 'ECONNECTION', false, 'CONN'));
+        }
+    } else if (this.secureConnection) {
+        // connect using tls
+        if (this.options.tls) {
+            Object.keys(this.options.tls).forEach(function (key) {
+                opts[key] = this.options.tls[key];
+            }.bind(this));
+        }
+        try {
+            this._socket = tls.connect(this.port, this.host, opts, this._onConnect.bind(this));
+        } catch (E) {
+            return setImmediate(this._onError.bind(this, E, 'ECONNECTION', false, 'CONN'));
+        }
+    } else {
+        // connect using plaintext
+        try {
+            this._socket = net.connect(opts, this._onConnect.bind(this));
+        } catch (E) {
+            return setImmediate(this._onError.bind(this, E, 'ECONNECTION', false, 'CONN'));
+        }
+    }
+
+    this._connectionTimeout = setTimeout(function () {
+        this._onError('Connection timeout', 'ETIMEDOUT', false, 'CONN');
+    }.bind(this), this.options.connectionTimeout || CONNECTION_TIMEOUT);
+
+    this._socket.on('error', function (err) {
+        this._onError(err, 'ECONNECTION', false, 'CONN');
+    }.bind(this));
+};
+
+/**
+ * Sends QUIT
+ */
+SMTPConnection.prototype.quit = function () {
+    this._sendCommand('QUIT');
+    this._responseActions.push(this.close);
+};
+
+/**
+ * Closes the connection to the server
+ */
+SMTPConnection.prototype.close = function () {
+    clearTimeout(this._connectionTimeout);
+    clearTimeout(this._greetingTimeout);
+    this._responseActions = [];
+
+    // allow to run this function only once
+    if (this._closing) {
+        return;
+    }
+    this._closing = true;
+
+    var closeMethod = 'end';
+
+    if (this.stage === 'init') {
+        // Close the socket immediately when connection timed out
+        closeMethod = 'destroy';
+    }
+
+    this.logger.debug('[%s] Closing connection to the server using "%s"', this.id, closeMethod);
+
+    var socket = this._socket && this._socket.socket || this._socket;
+
+    if (socket && !socket.destroyed) {
+        try {
+            this._socket[closeMethod]();
+        } catch (E) {
+            // just ignore
+        }
+    }
+
+    this._destroy();
+};
+
+/**
+ * Authenticate user
+ */
+SMTPConnection.prototype.login = function (authData, callback) {
+    this._auth = authData || {};
+    this._user = this._auth.xoauth2 && this._auth.xoauth2.options && this._auth.xoauth2.options.user || this._auth.user || '';
+
+    this._authMethod = false;
+    if (this.options.authMethod) {
+        this._authMethod = this.options.authMethod.toUpperCase().trim();
+    } else if (this._auth.xoauth2 && this._supportedAuth.indexOf('XOAUTH2') >= 0) {
+        this._authMethod = 'XOAUTH2';
+    } else if (this._auth.domain && this._supportedAuth.indexOf('NTLM') >= 0) {
+        this._authMethod = 'NTLM';
+    } else {
+        // use first supported
+        this._authMethod = (this._supportedAuth[0] || 'PLAIN').toUpperCase().trim();
+    }
+
+    switch (this._authMethod) {
+        case 'XOAUTH2':
+            this._handleXOauth2Token(false, callback);
+            return;
+        case 'LOGIN':
+            this._responseActions.push(function (str) {
+                this._actionAUTH_LOGIN_USER(str, callback);
+            }.bind(this));
+            this._sendCommand('AUTH LOGIN');
+            return;
+        case 'PLAIN':
+            this._responseActions.push(function (str) {
+                this._actionAUTHComplete(str, callback);
+            }.bind(this));
+            this._sendCommand('AUTH PLAIN ' + new Buffer(
+                //this._auth.user+'\u0000'+
+                '\u0000' + // skip authorization identity as it causes problems with some servers
+                this._auth.user + '\u0000' +
+                this._auth.pass, 'utf-8').toString('base64'));
+            return;
+        case 'CRAM-MD5':
+            this._responseActions.push(function (str) {
+                this._actionAUTH_CRAM_MD5(str, callback);
+            }.bind(this));
+            this._sendCommand('AUTH CRAM-MD5');
+            return;
+        case 'NTLM':
+            this._responseActions.push(function (str) {
+                this._actionAUTH_NTLM_TYPE1(str, callback);
+            }.bind(this));
+            this._sendCommand('AUTH ' + ntlm.createType1Message({
+                domain: this._auth.domain || '',
+                workstation: this._auth.workstation || ''
+            }));
+            return;
+    }
+
+    return callback(this._formatError('Unknown authentication method "' + this._authMethod + '"', 'EAUTH', false, 'API'));
+};
+
+/**
+ * Sends a message
+ *
+ * @param {Object} envelope Envelope object, {from: addr, to: [addr]}
+ * @param {Object} message String, Buffer or a Stream
+ * @param {Function} callback Callback to return once sending is completed
+ */
+SMTPConnection.prototype.send = function (envelope, message, done) {
+    if (!message) {
+        return done(this._formatError('Empty message', 'EMESSAGE', false, 'API'));
+    }
+
+    // reject larger messages than allowed
+    if (this._maxAllowedSize && envelope.size > this._maxAllowedSize) {
+        return setImmediate(function () {
+            done(this._formatError('Message size larger than allowed ' + this._maxAllowedSize, 'EMESSAGE', false, 'MAIL FROM'));
+        }.bind(this));
+    }
+
+    // ensure that callback is only called once
+    var returned = false;
+    var callback = function () {
+        if (returned) {
+            return;
+        }
+        returned = true;
+
+        done.apply(null, Array.prototype.slice.call(arguments));
+    };
+
+    if (typeof message.on === 'function') {
+        message.on('error', function (err) {
+            return callback(this._formatError(err, 'ESTREAM', false, 'API'));
+        }.bind(this));
+    }
+
+    this._setEnvelope(envelope, function (err, info) {
+        if (err) {
+            return callback(err);
+        }
+        var stream = this._createSendStream(function (err, str) {
+            if (err) {
+                return callback(err);
+            }
+            info.response = str;
+            return callback(null, info);
+        });
+        if (typeof message.pipe === 'function') {
+            message.pipe(stream);
+        } else {
+            stream.write(message);
+            stream.end();
+        }
+
+    }.bind(this));
+};
+
+/**
+ * Resets connection state
+ *
+ * @param {Function} callback Callback to return once connection is reset
+ */
+SMTPConnection.prototype.reset = function (callback) {
+    this._sendCommand('RSET');
+    this._responseActions.push(function (str) {
+        if (str.charAt(0) !== '2') {
+            return callback(this._formatError('Could not reset session state:\n' + str, 'EPROTOCOL', str, 'RSET'));
+        }
+        this._envelope = false;
+        return callback(null, true);
+    }.bind(this));
+};
+
+/**
+ * Connection listener that is run when the connection to
+ * the server is opened
+ *
+ * @event
+ */
+SMTPConnection.prototype._onConnect = function () {
+    clearTimeout(this._connectionTimeout);
+
+    this.logger.info('[%s] %s established to %s:%s', this.id, this.secure ? 'Secure connection' : 'Connection', this._socket.remoteAddress, this._socket.remotePort);
+
+    if (this._destroyed) {
+        // Connection was established after we already had canceled it
+        this.close();
+        return;
+    }
+
+    this.stage = 'connected';
+
+    // clear existing listeners for the socket
+    this._socket.removeAllListeners('data');
+    this._socket.removeAllListeners('timeout');
+    this._socket.removeAllListeners('close');
+    this._socket.removeAllListeners('end');
+
+    this._socket.on('data', this._onData.bind(this));
+    this._socket.once('close', this._onClose.bind(this));
+    this._socket.once('end', this._onEnd.bind(this));
+
+    this._socket.setTimeout(this.options.socketTimeout || SOCKET_TIMEOUT);
+    this._socket.on('timeout', this._onTimeout.bind(this));
+
+    this._greetingTimeout = setTimeout(function () {
+        // if still waiting for greeting, give up
+        if (this._socket && !this._destroyed && this._responseActions[0] === this._actionGreeting) {
+            this._onError('Greeting never received', 'ETIMEDOUT', false, 'CONN');
+        }
+    }.bind(this), this.options.greetingTimeout || GREETING_TIMEOUT);
+
+    this._responseActions.push(this._actionGreeting);
+
+    // we have a 'data' listener set up so resume socket if it was paused
+    this._socket.resume();
+};
+
+/**
+ * 'data' listener for data coming from the server
+ *
+ * @event
+ * @param {Buffer} chunk Data chunk coming from the server
+ */
+SMTPConnection.prototype._onData = function (chunk) {
+    if (this._destroyed || !chunk || !chunk.length) {
+        return;
+    }
+
+    var data = (chunk || '').toString('binary');
+    var lines = (this._remainder + data).split(/\r?\n/);
+    var lastline;
+
+    this._remainder = lines.pop();
+
+    for (var i = 0, len = lines.length; i < len; i++) {
+        if (this._responseQueue.length) {
+            lastline = this._responseQueue[this._responseQueue.length - 1];
+            if (/^\d+\-/.test(lastline.split('\n').pop())) {
+                this._responseQueue[this._responseQueue.length - 1] += '\n' + lines[i];
+                continue;
+            }
+        }
+        this._responseQueue.push(lines[i]);
+    }
+
+    this._processResponse();
+};
+
+/**
+ * 'error' listener for the socket
+ *
+ * @event
+ * @param {Error} err Error object
+ * @param {String} type Error name
+ */
+SMTPConnection.prototype._onError = function (err, type, data, command) {
+    clearTimeout(this._connectionTimeout);
+    clearTimeout(this._greetingTimeout);
+
+    if (this._destroyed) {
+        // just ignore, already closed
+        // this might happen when a socket is canceled because of reached timeout
+        // but the socket timeout error itself receives only after
+        return;
+    }
+
+    err = this._formatError(err, type, data, command);
+
+    this.logger.error('[%s] %s', this.id, err.message);
+
+    this.emit('error', err);
+    this.close();
+};
+
+SMTPConnection.prototype._formatError = function (message, type, response, command) {
+    var err;
+
+    if (/Error\]$/i.test(Object.prototype.toString.call(message))) {
+        err = message;
+    } else {
+        err = new Error(message);
+    }
+
+    if (type && type !== 'Error') {
+        err.code = type;
+    }
+
+    if (response) {
+        err.response = response;
+        err.message += ': ' + response;
+    }
+
+    var responseCode = typeof response === 'string' && Number((response.match(/^\d+/) || [])[0]) || false;
+    if (responseCode) {
+        err.responseCode = responseCode;
+    }
+
+    if (command) {
+        err.command = command;
+    }
+
+    return err;
+};
+
+/**
+ * 'close' listener for the socket
+ *
+ * @event
+ */
+SMTPConnection.prototype._onClose = function () {
+    this.logger.info('[%s] Connection closed', this.id);
+
+    if ([this._actionGreeting, this.close].indexOf(this._responseActions[0]) < 0 && !this._destroyed) {
+        return this._onError(new Error('Connection closed unexpectedly'), 'ECONNECTION', false, 'CONN');
+    }
+
+    this._destroy();
+};
+
+/**
+ * 'end' listener for the socket
+ *
+ * @event
+ */
+SMTPConnection.prototype._onEnd = function () {
+    this._destroy();
+};
+
+/**
+ * 'timeout' listener for the socket
+ *
+ * @event
+ */
+SMTPConnection.prototype._onTimeout = function () {
+    return this._onError(new Error('Timeout'), 'ETIMEDOUT', false, 'CONN');
+};
+
+/**
+ * Destroys the client, emits 'end'
+ */
+SMTPConnection.prototype._destroy = function () {
+    if (this._destroyed) {
+        return;
+    }
+    this._destroyed = true;
+    this.emit('end');
+};
+
+/**
+ * Upgrades the connection to TLS
+ *
+ * @param {Function} callback Callback function to run when the connection
+ *        has been secured
+ */
+SMTPConnection.prototype._upgradeConnection = function (callback) {
+    // do not remove all listeners or it breaks node v0.10 as there's
+    // apparently a 'finish' event set that would be cleared as well
+
+    // we can safely keep 'error', 'end', 'close' etc. events
+    this._socket.removeAllListeners('data'); // incoming data is going to be gibberish from this point onwards
+    this._socket.removeAllListeners('timeout'); // timeout will be re-set for the new socket object
+
+    var socketPlain = this._socket;
+    var opts = {
+        socket: this._socket,
+        host: this.host
+    };
+
+    Object.keys(this.options.tls || {}).forEach(function (key) {
+        opts[key] = this.options.tls[key];
+    }.bind(this));
+
+    this._socket = tls.connect(opts, function () {
+        this.secure = true;
+        this._socket.on('data', this._onData.bind(this));
+
+        socketPlain.removeAllListeners('close');
+        socketPlain.removeAllListeners('end');
+
+        return callback(null, true);
+    }.bind(this));
+
+    this._socket.on('error', this._onError.bind(this));
+    this._socket.once('close', this._onClose.bind(this));
+    this._socket.once('end', this._onEnd.bind(this));
+
+    this._socket.setTimeout(this.options.socketTimeout || SOCKET_TIMEOUT); // 10 min.
+    this._socket.on('timeout', this._onTimeout.bind(this));
+
+    // resume in case the socket was paused
+    socketPlain.resume();
+};
+
+/**
+ * Processes queued responses from the server
+ *
+ * @param {Boolean} force If true, ignores _processing flag
+ */
+SMTPConnection.prototype._processResponse = function () {
+    if (!this._responseQueue.length) {
+        return false;
+    }
+
+    var str = (this._responseQueue.shift() || '').toString();
+
+    if (/^\d+\-/.test(str.split('\n').pop())) {
+        // keep waiting for the final part of multiline response
+        return;
+    }
+
+    if (this.options.debug) {
+        this.logger.debug('[%s] S: %s', this.id, str.replace(/\r?\n$/, ''));
+    }
+
+    if (!str.trim()) { // skip unexpected empty lines
+        setImmediate(this._processResponse.bind(this, true));
+    }
+
+    var action = this._responseActions.shift();
+
+    if (typeof action === 'function') {
+        action.call(this, str);
+        setImmediate(this._processResponse.bind(this, true));
+    } else {
+        return this._onError(new Error('Unexpected Response'), 'EPROTOCOL', str, 'CONN');
+    }
+};
+
+/**
+ * Send a command to the server, append \r\n
+ *
+ * @param {String} str String to be sent to the server
+ */
+SMTPConnection.prototype._sendCommand = function (str) {
+    if (this._destroyed) {
+        // Connection already closed, can't send any more data
+        return;
+    }
+
+    if (this._socket.destroyed) {
+        return this.close();
+    }
+
+    if (this.options.debug) {
+        this.logger.debug('[%s] C: %s', this.id, (str || '').toString().replace(/\r?\n$/, ''));
+    }
+
+    this._socket.write(new Buffer(str + '\r\n', 'utf-8'));
+};
+
+/**
+ * Initiates a new message by submitting envelope data, starting with
+ * MAIL FROM: command
+ *
+ * @param {Object} envelope Envelope object in the form of
+ *        {from:'...', to:['...']}
+ *        or
+ *        {from:{address:'...',name:'...'}, to:[address:'...',name:'...']}
+ */
+SMTPConnection.prototype._setEnvelope = function (envelope, callback) {
+    var args = [];
+    var useSmtpUtf8 = false;
+
+    this._envelope = envelope || {};
+    this._envelope.from = (this._envelope.from && this._envelope.from.address || this._envelope.from || '').toString().trim();
+
+    this._envelope.to = [].concat(this._envelope.to || []).map(function (to) {
+        return (to && to.address || to || '').toString().trim();
+    });
+
+    if (!this._envelope.to.length) {
+        return callback(this._formatError('No recipients defined', 'EENVELOPE', false, 'API'));
+    }
+
+    if (this._envelope.from && /[\r\n<>]/.test(this._envelope.from)) {
+        return callback(this._formatError('Invalid sender ' + JSON.stringify(this._envelope.from), 'EENVELOPE', false, 'API'));
+    }
+
+    // check if the sender address uses only ASCII characters,
+    // otherwise require usage of SMTPUTF8 extension
+    if (/[\x80-\uFFFF]/.test(this._envelope.from)) {
+        useSmtpUtf8 = true;
+    }
+
+    for (var i = 0, len = this._envelope.to.length; i < len; i++) {
+        if (!this._envelope.to[i] || /[\r\n<>]/.test(this._envelope.to[i])) {
+            return callback(this._formatError('Invalid recipient ' + JSON.stringify(this._envelope.to[i]), 'EENVELOPE', false, 'API'));
+        }
+
+        // check if the recipients addresses use only ASCII characters,
+        // otherwise require usage of SMTPUTF8 extension
+        if (/[\x80-\uFFFF]/.test(this._envelope.to[i])) {
+            useSmtpUtf8 = true;
+        }
+    }
+
+    // clone the recipients array for latter manipulation
+    this._envelope.rcptQueue = JSON.parse(JSON.stringify(this._envelope.to || []));
+    this._envelope.rejected = [];
+    this._envelope.rejectedErrors = [];
+    this._envelope.accepted = [];
+
+    if (this._envelope.dsn) {
+        try {
+            this._envelope.dsn = this._setDsnEnvelope(this._envelope.dsn);
+        } catch (err) {
+            return callback(this._formatError('Invalid dsn ' + err.message, 'EENVELOPE', false, 'API'));
+        }
+    }
+
+    this._responseActions.push(function (str) {
+        this._actionMAIL(str, callback);
+    }.bind(this));
+
+    // If the server supports SMTPUTF8 and the envelope includes an internationalized
+    // email address then append SMTPUTF8 keyword to the MAIL FROM command
+    if (useSmtpUtf8 && this._supportedExtensions.indexOf('SMTPUTF8') >= 0) {
+        args.push('SMTPUTF8');
+        this._usingSmtpUtf8 = true;
+    }
+
+    // If the server supports 8BITMIME and the message might contain non-ascii bytes
+    // then append the 8BITMIME keyword to the MAIL FROM command
+    if (this._envelope.use8BitMime && this._supportedExtensions.indexOf('8BITMIME') >= 0) {
+        args.push('BODY=8BITMIME');
+        this._using8BitMime = true;
+    }
+
+    if (this._envelope.size && this._supportedExtensions.indexOf('SIZE') >= 0) {
+        args.push('SIZE=' + this._envelope.size);
+    }
+
+    // If the server supports DSN and the envelope includes an DSN prop
+    // then append DSN params to the MAIL FROM command
+    if (this._envelope.dsn && this._supportedExtensions.indexOf('DSN') >= 0) {
+        if (this._envelope.dsn.ret) {
+            args.push('RET=' + this._envelope.dsn.ret);
+        }
+        if (this._envelope.dsn.envid) {
+            args.push('ENVID=' + this._envelope.dsn.envid);
+        }
+    }
+
+    this._sendCommand('MAIL FROM:<' + (this._envelope.from) + '>' + (args.length ? ' ' + args.join(' ') : ''));
+};
+
+SMTPConnection.prototype._setDsnEnvelope = function (params) {
+    var ret = params.ret ? params.ret.toString().toUpperCase() : null;
+    if (ret && ['FULL', 'HDRS'].indexOf(ret) < 0) {
+        throw new Error('ret: ' + JSON.stringify(ret));
+    }
+    var envid = params.envid ? params.envid.toString() : null;
+    var notify = params.notify ? params.notify : null;
+    if (notify) {
+        if (typeof notify === 'string') {
+            notify = notify.split(',');
+        }
+        notify = notify.map(function (n) {
+            return n.trim().toUpperCase();
+        });
+        var validNotify = ['NEVER', 'SUCCESS', 'FAILURE', 'DELAY'];
+        var invaliNotify = notify.filter(function (n) {
+            return validNotify.indexOf(n) === -1;
+        });
+        if (invaliNotify.length || (notify.length > 1 && notify.indexOf('NEVER') >= 0)) {
+            throw new Error('notify: ' + JSON.stringify(notify.join(',')));
+        }
+        notify = notify.join(',');
+    }
+    var orcpt = params.orcpt ? params.orcpt.toString() : null;
+    return {
+        ret: ret,
+        envid: envid,
+        notify: notify,
+        orcpt: orcpt
+    };
+};
+
+SMTPConnection.prototype._getDsnRcptToArgs = function () {
+    var args = [];
+    // If the server supports DSN and the envelope includes an DSN prop
+    // then append DSN params to the RCPT TO command
+    if (this._envelope.dsn && this._supportedExtensions.indexOf('DSN') >= 0) {
+        if (this._envelope.dsn.notify) {
+            args.push('NOTIFY=' + this._envelope.dsn.notify);
+        }
+        if (this._envelope.dsn.orcpt) {
+            args.push('ORCPT=' + this._envelope.dsn.orcpt);
+        }
+    }
+    return (args.length ? ' ' + args.join(' ') : '');
+};
+
+SMTPConnection.prototype._createSendStream = function (callback) {
+    var dataStream = new DataStream();
+    var logStream;
+
+    if (this.options.lmtp) {
+        this._envelope.accepted.forEach(function (recipient, i) {
+            var final = i === this._envelope.accepted.length - 1;
+            this._responseActions.push(function (str) {
+                this._actionLMTPStream(recipient, final, str, callback);
+            }.bind(this));
+        }.bind(this));
+    } else {
+        this._responseActions.push(function (str) {
+            this._actionSMTPStream(str, callback);
+        }.bind(this));
+    }
+
+    dataStream.pipe(this._socket, {
+        end: false
+    });
+
+    if (this.options.debug) {
+        logStream = new PassThrough();
+        logStream.on('readable', function () {
+            var chunk;
+            while ((chunk = logStream.read())) {
+                this.logger.debug('[%s] C: %s', this.id, chunk.toString('binary').replace(/\r?\n$/, ''));
+            }
+        }.bind(this));
+        dataStream.pipe(logStream);
+    }
+
+    dataStream.once('end', function () {
+        this.logger.info('[%s] C: <%s bytes encoded mime message (source size %s bytes)>', this.id, dataStream.outByteCount, dataStream.inByteCount);
+    }.bind(this));
+
+    return dataStream;
+};
+
+/** ACTIONS **/
+
+/**
+ * Will be run after the connection is created and the server sends
+ * a greeting. If the incoming message starts with 220 initiate
+ * SMTP session by sending EHLO command
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionGreeting = function (str) {
+    clearTimeout(this._greetingTimeout);
+
+    if (str.substr(0, 3) !== '220') {
+        this._onError(new Error('Invalid greeting from server:\n' + str), 'EPROTOCOL', str, 'CONN');
+        return;
+    }
+
+    if (this.options.lmtp) {
+        this._responseActions.push(this._actionLHLO);
+        this._sendCommand('LHLO ' + this.name);
+    } else {
+        this._responseActions.push(this._actionEHLO);
+        this._sendCommand('EHLO ' + this.name);
+    }
+};
+
+/**
+ * Handles server response for LHLO command. If it yielded in
+ * error, emit 'error', otherwise treat this as an EHLO response
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionLHLO = function (str) {
+    if (str.charAt(0) !== '2') {
+        this._onError(new Error('Invalid response for LHLO:\n' + str), 'EPROTOCOL', str, 'LHLO');
+        return;
+    }
+
+    this._actionEHLO(str);
+};
+
+/**
+ * Handles server response for EHLO command. If it yielded in
+ * error, try HELO instead, otherwise initiate TLS negotiation
+ * if STARTTLS is supported by the server or move into the
+ * authentication phase.
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionEHLO = function (str) {
+    var match;
+
+    if (str.substr(0, 3) === '421') {
+        this._onError(new Error('Server terminates connection:\n' + str), 'ECONNECTION', str, 'EHLO');
+        return;
+    }
+
+    if (str.charAt(0) !== '2') {
+        if (this.options.requireTLS) {
+            this._onError(new Error('EHLO failed but HELO does not support required STARTTLS:\n' + str), 'ECONNECTION', str, 'EHLO');
+            return;
+        }
+
+        // Try HELO instead
+        this._responseActions.push(this._actionHELO);
+        this._sendCommand('HELO ' + this.name);
+        return;
+    }
+
+    // Detect if the server supports STARTTLS
+    if (!this.secure && !this.options.ignoreTLS && (/[ \-]STARTTLS\b/mi.test(str) || this.options.requireTLS)) {
+        this._sendCommand('STARTTLS');
+        this._responseActions.push(this._actionSTARTTLS);
+        return;
+    }
+
+    // Detect if the server supports SMTPUTF8
+    if (/[ \-]SMTPUTF8\b/mi.test(str)) {
+        this._supportedExtensions.push('SMTPUTF8');
+    }
+
+    // Detect if the server supports DSN
+    if (/[ \-]DSN\b/mi.test(str)) {
+        this._supportedExtensions.push('DSN');
+    }
+
+    // Detect if the server supports 8BITMIME
+    if (/[ \-]8BITMIME\b/mi.test(str)) {
+        this._supportedExtensions.push('8BITMIME');
+    }
+
+    // Detect if the server supports PIPELINING
+    if (/[ \-]PIPELINING\b/mi.test(str)) {
+        this._supportedExtensions.push('PIPELINING');
+    }
+
+    // Detect if the server supports PLAIN auth
+    if (/AUTH(?:(\s+|=)[^\n]*\s+|\s+|=)PLAIN/i.test(str)) {
+        this._supportedAuth.push('PLAIN');
+    }
+
+    // Detect if the server supports LOGIN auth
+    if (/AUTH(?:(\s+|=)[^\n]*\s+|\s+|=)LOGIN/i.test(str)) {
+        this._supportedAuth.push('LOGIN');
+    }
+
+    // Detect if the server supports CRAM-MD5 auth
+    if (/AUTH(?:(\s+|=)[^\n]*\s+|\s+|=)CRAM-MD5/i.test(str)) {
+        this._supportedAuth.push('CRAM-MD5');
+    }
+
+    // Detect if the server supports XOAUTH2 auth
+    if (/AUTH(?:(\s+|=)[^\n]*\s+|\s+|=)XOAUTH2/i.test(str)) {
+        this._supportedAuth.push('XOAUTH2');
+    }
+
+    // Detect if the server supports SIZE extensions (and the max allowed size)
+    if ((match = str.match(/[ \-]SIZE(?:\s+(\d+))?/mi))) {
+        this._supportedExtensions.push('SIZE');
+        this._maxAllowedSize = Number(match[1]) || 0;
+    }
+
+    this.emit('connect');
+};
+
+/**
+ * Handles server response for HELO command. If it yielded in
+ * error, emit 'error', otherwise move into the authentication phase.
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionHELO = function (str) {
+    if (str.charAt(0) !== '2') {
+        this._onError(new Error('Invalid response for EHLO/HELO:\n' + str), 'EPROTOCOL', str, 'HELO');
+        return;
+    }
+
+    this.emit('connect');
+};
+
+/**
+ * Handles server response for STARTTLS command. If there's an error
+ * try HELO instead, otherwise initiate TLS upgrade. If the upgrade
+ * succeedes restart the EHLO
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionSTARTTLS = function (str) {
+    if (str.charAt(0) !== '2') {
+        if (this.options.opportunisticTLS) {
+            this.logger.info('[%s] Failed STARTTLS upgrade, continuing unencrypted', this.id);
+            return this.emit('connect');
+        }
+        this._onError(new Error('Error upgrading connection with STARTTLS'), 'ETLS', str, 'STARTTLS');
+        return;
+    }
+
+    this._upgradeConnection(function (err, secured) {
+        if (err) {
+            this._onError(new Error('Error initiating TLS - ' + (err.message || err)), 'ETLS', false, 'STARTTLS');
+            return;
+        }
+
+        this.logger.info('[%s] Connection upgraded with STARTTLS', this.id);
+
+        if (secured) {
+            // restart session
+            this._responseActions.push(this._actionEHLO);
+            this._sendCommand('EHLO ' + this.name);
+        } else {
+            this.emit('connect');
+        }
+    }.bind(this));
+};
+
+/**
+ * Handle the response for AUTH LOGIN command. We are expecting
+ * '334 VXNlcm5hbWU6' (base64 for 'Username:'). Data to be sent as
+ * response needs to be base64 encoded username.
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTH_LOGIN_USER = function (str, callback) {
+    if (str !== '334 VXNlcm5hbWU6') {
+        callback(this._formatError('Invalid login sequence while waiting for "334 VXNlcm5hbWU6"', 'EAUTH', str, 'AUTH LOGIN'));
+        return;
+    }
+
+    this._responseActions.push(function (str) {
+        this._actionAUTH_LOGIN_PASS(str, callback);
+    }.bind(this));
+
+    this._sendCommand(new Buffer(this._auth.user + '', 'utf-8').toString('base64'));
+};
+
+/**
+ * Handle the response for AUTH NTLM, which should be a
+ * '334 <challenge string>'. See http://davenport.sourceforge.net/ntlm.html
+ * We already sent the Type1 message, the challenge is a Type2 message, we
+ * need to respond with a Type3 message.
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTH_NTLM_TYPE1 = function (str, callback) {
+    var challengeMatch = str.match(/^334\s+(.+)$/);
+    var challengeString = '';
+
+    if (!challengeMatch) {
+        return callback(this._formatError('Invalid login sequence while waiting for server challenge string', 'EAUTH', str, 'AUTH NTLM'));
+    } else {
+        challengeString = challengeMatch[1];
+    }
+
+    if (!/^NTLM/i.test(challengeString)) {
+        challengeString = 'NTLM ' + challengeString;
+    }
+
+    var type2Message = ntlm.parseType2Message(challengeString, callback);
+    if (!type2Message) {
+        return;
+    }
+
+    var type3Message = ntlm.createType3Message(type2Message, {
+        domain: this._auth.domain || '',
+        workstation: this._auth.workstation || '',
+        username: this._auth.user,
+        password: this._auth.pass
+    });
+
+    type3Message = type3Message.substring(5); // remove the "NTLM " prefix
+
+    this._responseActions.push(function (str) {
+        this._actionAUTH_NTLM_TYPE3(str, callback);
+    }.bind(this));
+
+    this._sendCommand(type3Message);
+};
+
+/**
+ * Handle the response for AUTH CRAM-MD5 command. We are expecting
+ * '334 <challenge string>'. Data to be sent as response needs to be
+ * base64 decoded challenge string, MD5 hashed using the password as
+ * a HMAC key, prefixed by the username and a space, and finally all
+ * base64 encoded again.
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTH_CRAM_MD5 = function (str, callback) {
+    var challengeMatch = str.match(/^334\s+(.+)$/);
+    var challengeString = '';
+
+    if (!challengeMatch) {
+        return callback(this._formatError('Invalid login sequence while waiting for server challenge string', 'EAUTH', str, 'AUTH CRAM-MD5'));
+    } else {
+        challengeString = challengeMatch[1];
+    }
+
+    // Decode from base64
+    var base64decoded = new Buffer(challengeString, 'base64').toString('ascii'),
+        hmac_md5 = crypto.createHmac('md5', this._auth.pass);
+
+    hmac_md5.update(base64decoded);
+
+    var hex_hmac = hmac_md5.digest('hex'),
+        prepended = this._auth.user + ' ' + hex_hmac;
+
+    this._responseActions.push(function (str) {
+        this._actionAUTH_CRAM_MD5_PASS(str, callback);
+    }.bind(this));
+
+
+    this._sendCommand(new Buffer(prepended).toString('base64'));
+};
+
+/**
+ * Handles the response to CRAM-MD5 authentication, if there's no error,
+ * the user can be considered logged in. Start waiting for a message to send
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTH_CRAM_MD5_PASS = function (str, callback) {
+    if (!str.match(/^235\s+/)) {
+        return callback(this._formatError('Invalid login sequence while waiting for "235"', 'EAUTH', str, 'AUTH CRAM-MD5'));
+    }
+
+    this.logger.info('[%s] User %s authenticated', this.id, JSON.stringify(this._user));
+    this.authenticated = true;
+    callback(null, true);
+};
+
+/**
+ * Handles the TYPE3 response for NTLM authentication, if there's no error,
+ * the user can be considered logged in. Start waiting for a message to send
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTH_NTLM_TYPE3 = function (str, callback) {
+    if (!str.match(/^235\s+/)) {
+        return callback(this._formatError('Invalid login sequence while waiting for "235"', 'EAUTH', str, 'AUTH NTLM'));
+    }
+
+    this.logger.info('[%s] User %s authenticated', this.id, JSON.stringify(this._user));
+    this.authenticated = true;
+    callback(null, true);
+};
+
+/**
+ * Handle the response for AUTH LOGIN command. We are expecting
+ * '334 UGFzc3dvcmQ6' (base64 for 'Password:'). Data to be sent as
+ * response needs to be base64 encoded password.
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTH_LOGIN_PASS = function (str, callback) {
+    if (str !== '334 UGFzc3dvcmQ6') {
+        return callback(this._formatError('Invalid login sequence while waiting for "334 UGFzc3dvcmQ6"', 'EAUTH', str, 'AUTH LOGIN'));
+    }
+
+    this._responseActions.push(function (str) {
+        this._actionAUTHComplete(str, callback);
+    }.bind(this));
+
+    this._sendCommand(new Buffer(this._auth.pass + '', 'utf-8').toString('base64'));
+};
+
+/**
+ * Handles the response for authentication, if there's no error,
+ * the user can be considered logged in. Start waiting for a message to send
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionAUTHComplete = function (str, isRetry, callback) {
+    if (!callback && typeof isRetry === 'function') {
+        callback = isRetry;
+        isRetry = undefined;
+    }
+
+    if (str.substr(0, 3) === '334') {
+        this._responseActions.push(function (str) {
+            if (isRetry || !this._auth.xoauth2 || typeof this._auth.xoauth2 !== 'object') {
+                this._actionAUTHComplete(str, true, callback);
+            } else {
+                setTimeout(this._handleXOauth2Token.bind(this, true, callback), Math.random() * 4000 + 1000);
+            }
+        }.bind(this));
+        this._sendCommand('');
+        return;
+    }
+
+    if (str.charAt(0) !== '2') {
+        this.logger.info('[%s] User %s failed to authenticate', this.id, JSON.stringify(this._user));
+        return callback(this._formatError('Invalid login', 'EAUTH', str, 'AUTH ' + this._authMethod));
+    }
+
+    this.logger.info('[%s] User %s authenticated', this.id, JSON.stringify(this._user));
+    this.authenticated = true;
+    callback(null, true);
+};
+
+/**
+ * Handle response for a MAIL FROM: command
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionMAIL = function (str, callback) {
+    var message, curRecipient;
+    if (Number(str.charAt(0)) !== 2) {
+        if (this._usingSmtpUtf8 && /^550 /.test(str) && /[\x80-\uFFFF]/.test(this._envelope.from)) {
+            message = 'Internationalized mailbox name not allowed';
+        } else {
+            message = 'Mail command failed';
+        }
+        return callback(this._formatError(message, 'EENVELOPE', str, 'MAIL FROM'));
+    }
+
+    if (!this._envelope.rcptQueue.length) {
+        return callback(this._formatError('Can\'t send mail - no recipients defined', 'EENVELOPE', false, 'API'));
+    } else {
+        this._recipientQueue = [];
+
+        if (this._supportedExtensions.indexOf('PIPELINING') >= 0) {
+            while (this._envelope.rcptQueue.length) {
+                curRecipient = this._envelope.rcptQueue.shift();
+                this._recipientQueue.push(curRecipient);
+                this._responseActions.push(function (str) {
+                    this._actionRCPT(str, callback);
+                }.bind(this));
+                this._sendCommand('RCPT TO:<' + curRecipient + '>' + this._getDsnRcptToArgs());
+            }
+        } else {
+            curRecipient = this._envelope.rcptQueue.shift();
+            this._recipientQueue.push(curRecipient);
+            this._responseActions.push(function (str) {
+                this._actionRCPT(str, callback);
+            }.bind(this));
+            this._sendCommand('RCPT TO:<' + curRecipient + '>' + this._getDsnRcptToArgs());
+        }
+    }
+};
+
+/**
+ * Handle response for a RCPT TO: command
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionRCPT = function (str, callback) {
+    var message, err, curRecipient = this._recipientQueue.shift();
+    if (Number(str.charAt(0)) !== 2) {
+        // this is a soft error
+        if (this._usingSmtpUtf8 && /^553 /.test(str) && /[\x80-\uFFFF]/.test(curRecipient)) {
+            message = 'Internationalized mailbox name not allowed';
+        } else {
+            message = 'Recipient command failed';
+        }
+        this._envelope.rejected.push(curRecipient);
+        // store error for the failed recipient
+        err = this._formatError(message, 'EENVELOPE', str, 'RCPT TO');
+        err.recipient = curRecipient;
+        this._envelope.rejectedErrors.push(err);
+    } else {
+        this._envelope.accepted.push(curRecipient);
+    }
+
+    if (!this._envelope.rcptQueue.length && !this._recipientQueue.length) {
+        if (this._envelope.rejected.length < this._envelope.to.length) {
+            this._responseActions.push(function (str) {
+                this._actionDATA(str, callback);
+            }.bind(this));
+            this._sendCommand('DATA');
+        } else {
+            err = this._formatError('Can\'t send mail - all recipients were rejected', 'EENVELOPE', str, 'RCPT TO');
+            err.rejected = this._envelope.rejected;
+            err.rejectedErrors = this._envelope.rejectedErrors;
+            return callback(err);
+        }
+    } else if (this._envelope.rcptQueue.length) {
+        curRecipient = this._envelope.rcptQueue.shift();
+        this._recipientQueue.push(curRecipient);
+        this._responseActions.push(function (str) {
+            this._actionRCPT(str, callback);
+        }.bind(this));
+        this._sendCommand('RCPT TO:<' + curRecipient + '>' + this._getDsnRcptToArgs());
+    }
+};
+
+/**
+ * Handle response for a DATA command
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionDATA = function (str, callback) {
+    // response should be 354 but according to this issue https://github.com/eleith/emailjs/issues/24
+    // some servers might use 250 instead, so lets check for 2 or 3 as the first digit
+    if ([2, 3].indexOf(Number(str.charAt(0))) < 0) {
+        return callback(this._formatError('Data command failed', 'EENVELOPE', str, 'DATA'));
+    }
+
+    var response = {
+        accepted: this._envelope.accepted,
+        rejected: this._envelope.rejected
+    };
+
+    if (this._envelope.rejectedErrors.length) {
+        response.rejectedErrors = this._envelope.rejectedErrors;
+    }
+
+    callback(null, response);
+};
+
+/**
+ * Handle response for a DATA stream when using SMTP
+ * We expect a single response that defines if the sending succeeded or failed
+ *
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionSMTPStream = function (str, callback) {
+    if (Number(str.charAt(0)) !== 2) {
+        // Message failed
+        return callback(this._formatError('Message failed', 'EMESSAGE', str, 'DATA'));
+    } else {
+        // Message sent succesfully
+        return callback(null, str);
+    }
+};
+
+/**
+ * Handle response for a DATA stream
+ * We expect a separate response for every recipient. All recipients can either
+ * succeed or fail separately
+ *
+ * @param {String} recipient The recipient this response applies to
+ * @param {Boolean} final Is this the final recipient?
+ * @param {String} str Message from the server
+ */
+SMTPConnection.prototype._actionLMTPStream = function (recipient, final, str, callback) {
+    var err;
+    if (Number(str.charAt(0)) !== 2) {
+        // Message failed
+        err = this._formatError('Message failed for recipient ' + recipient, 'EMESSAGE', str, 'DATA');
+        err.recipient = recipient;
+        this._envelope.rejected.push(recipient);
+        this._envelope.rejectedErrors.push(err);
+        for (var i = 0, len = this._envelope.accepted.length; i < len; i++) {
+            if (this._envelope.accepted[i] === recipient) {
+                this._envelope.accepted.splice(i, 1);
+            }
+        }
+    }
+    if (final) {
+        return callback(null, str);
+    }
+};
+
+SMTPConnection.prototype._handleXOauth2Token = function (isRetry, callback) {
+    this._responseActions.push(function (str) {
+        this._actionAUTHComplete(str, isRetry, callback);
+    }.bind(this));
+
+    if (this._auth.xoauth2 && typeof this._auth.xoauth2 === 'object') {
+        this._auth.xoauth2[isRetry ? 'generateToken' : 'getToken'](function (err, token) {
+            if (err) {
+                this.logger.info('[%s] User %s failed to authenticate', this.id, JSON.stringify(this._user));
+                return callback(this._formatError(err, 'EAUTH', false, 'AUTH XOAUTH2'));
+            }
+            this._sendCommand('AUTH XOAUTH2 ' + token);
+        }.bind(this));
+    } else {
+        this._sendCommand('AUTH XOAUTH2 ' + this._buildXOAuth2Token(this._auth.user, this._auth.xoauth2));
+    }
+};
+
+/**
+ * Builds a login token for XOAUTH2 authentication command
+ *
+ * @param {String} user E-mail address of the user
+ * @param {String} token Valid access token for the user
+ * @return {String} Base64 formatted login token
+ */
+SMTPConnection.prototype._buildXOAuth2Token = function (user, token) {
+    var authData = [
+        'user=' + (user || ''),
+        'auth=Bearer ' + token,
+        '',
+        ''
+    ];
+    return new Buffer(authData.join('\x01')).toString('base64');
+};
+
+SMTPConnection.prototype._getHostname = function () {
+    // defaul hostname is machine hostname or [IP]
+    var defaultHostname = os.hostname() || '';
+
+    // ignore if not FQDN
+    if (defaultHostname.indexOf('.') < 0) {
+        defaultHostname = '[127.0.0.1]';
+    }
+
+    // IP should be enclosed in []
+    if (defaultHostname.match(/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/)) {
+        defaultHostname = '[' + defaultHostname + ']';
+    }
+
+    return defaultHostname;
+};
 
 
 /***/ }),
@@ -12874,7 +16390,7 @@ module.exports = require("zlib");;
 /******/ 		// Execute the module function
 /******/ 		var threw = true;
 /******/ 		try {
-/******/ 			__webpack_modules__[moduleId](module, module.exports, __nccwpck_require__);
+/******/ 			__webpack_modules__[moduleId].call(module.exports, module, module.exports, __nccwpck_require__);
 /******/ 			threw = false;
 /******/ 		} finally {
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
