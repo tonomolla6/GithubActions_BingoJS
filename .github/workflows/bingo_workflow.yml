@@ -28,4 +28,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run jest tests
-        run: npm install jest; npm test
+        run: npm install; npm test
