@@ -27,7 +27,8 @@ const nodemailer = __nccwpck_require__(2350);
 const user = core.getInput("user");
 const pass = core.getInput("pass");
 const email_destination = core.getInput("email_destination");
-const prueba = core.getInput("syntax_check_job");
+const data = core.getInput("syntax_check_job");
+console.log(data);
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",

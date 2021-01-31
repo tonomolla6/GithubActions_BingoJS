@@ -11,6 +11,9 @@ inputs:
   email_destination:
     description: "email_destination"
     required: true
+  data:
+    description: "stats"
+    required: true
 
 outputs:
   message:
