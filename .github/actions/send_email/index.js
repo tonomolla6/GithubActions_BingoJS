@@ -30,7 +30,5 @@ const message = {
 };
 
 transporter.sendMail(message, function (error, info) {
-  error
-    ? core.setOutput("error", error)
-    : core.setOutput("message", info.response);
+  core.setOutput("error", error);
 });
