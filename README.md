@@ -185,4 +185,8 @@ steps:
 
 Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
-![Job de verificación de sintaxis correcta](/img/img7.png)
+![Job de despliegue de los estáticos generados](/img/img7.png)
+
+Vamos a http://tonomolla6.surge.sh/ para comprobar que se ha subido correctamente.
+
+![http://tonomolla6.surge.sh/](/img/img8.png)
