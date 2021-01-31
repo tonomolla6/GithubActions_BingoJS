@@ -74,3 +74,34 @@ doc
 Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
 ![Job de verificación de sintaxis correcta](/img/img2.png)
+
+## Job de ejecución de tests
+
+Se denominará **test_execution_job**, como en nuestra aplicación del Bingo disponemos de una batería de tests, se
+encargará de ejecutarlos y verificar que todos funcionan como se esperaba.
+
+1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu, esta vez le diremos que sin el job de syntax_check_job no se ejecute.
+
+```yml
+jobs:
+  test_execution_job:
+    name: test_execution_job
+    runs-on: ubuntu-latest
+    needs: syntax_check_job
+```
+
+2. Asignamos los pasos que debe de realizar nuestro job.
+   **Checkout repository** - Esta acción desprotege su repositorio en $ GITHUB*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
+   **Run jest tests** - Esta accion instala las dependencias necesarias para ejecutar el codigo, busca todos los archivos js \*\*.test.js* y los ejecuta para validar que el bingo funciona correctamente.
+
+```yml
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v2
+  - name: Run jest tests
+    run: npm install; npm test
+```
+
+Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
+
+![Job de verificación de sintaxis correcta](/img/img3.png)
