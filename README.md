@@ -414,4 +414,5 @@ Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el 
 
 Vamos a http://tonomolla6.surge.sh/ para comprobar que se ha subido correctamente.
 
-![http://tonomolla6.surge.sh/](/img/img12.png)
+
+Ultima versión desplegada el día: Sun Jan 31 20:34:04 UTC 2021
