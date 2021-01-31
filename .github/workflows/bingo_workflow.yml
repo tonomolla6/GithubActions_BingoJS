@@ -82,8 +82,8 @@ jobs:
     steps:
       - name: Change date
         run: |
-        sed -i '$d' README.md 
-        echo -e '\nUltima versión desplegada el día: `date`' >> README.md
+          sed -i '$d' README.md
+          echo -e "\nUltima versión desplegada el día: `date`" >> README.md
       - name: Update Readme
         run: |
           git config user.name tonomolla6

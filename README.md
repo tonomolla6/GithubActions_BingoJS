@@ -410,8 +410,8 @@ steps:
 
 Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
-![Job de despliegue de los estáticos generados](/img/img7.png)
+![Job de actualización del README principal del proyecto.](/img/img11.png)
 
 Vamos a http://tonomolla6.surge.sh/ para comprobar que se ha subido correctamente.
 
-![http://tonomolla6.surge.sh/](/img/img8.png)
+![http://tonomolla6.surge.sh/](/img/img12.png)
