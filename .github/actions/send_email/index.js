@@ -30,15 +30,15 @@ const message = {
     <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
     <br>
     <p>- syntax_check_job: ${
-      empty(syntax_check_job) ? "SKIPPED" : syntax_check_job
+      syntax_check_job == "" ? "SKIPPED" : syntax_check_job
     }</p>
     <p>- test_execution_job: ${
-      empty(test_execution_job) ? "SKIPPED" : test_execution_job
+      test_execution_job == "" ? "SKIPPED" : test_execution_job
     }</p>
     <p>- build_statics_job: ${
-      empty(build_statics_job) ? "SKIPPED" : build_statics_job
+      build_statics_job == "" ? "SKIPPED" : build_statics_job
     }</p>
-    <p>- deploy_job: ${empty(deploy_job) ? "SKIPPED" : deploy_job}</p>
+    <p>- deploy_job: ${deploy_job == "" ? "SKIPPED" : deploy_job}</p>
   `,
   attachments: [],
 };
