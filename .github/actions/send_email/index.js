@@ -4,6 +4,7 @@ const nodemailer = require("nodemailer");
 const user = core.getInput("user");
 const pass = core.getInput("pass");
 const email_destination = core.getInput("email_destination");
+const prueba = core.getInput("syntax_check_job");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -22,7 +23,7 @@ const message = {
   html: `
     <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
     <br>
-    <p>- syntax_check_job: resultado asociada</p>
+    <p>- syntax_check_job: ${prueba}</p>
     <p>- test_execution_job: resultado asociada</p>
     <p>- build_statics_job: resultado asociada</p>
     <p>- deploy_job: resultado asociada</p>
@@ -31,6 +32,5 @@ const message = {
 };
 
 transporter.sendMail(message, function (err, info) {
-  if (err) console.log(err);
-  else console.log(info);
+  err ? console.log(err) : console.log(info);
 });
