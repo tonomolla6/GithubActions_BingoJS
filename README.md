@@ -47,7 +47,7 @@ jobs:
 ```
 
 2. Asignamos los pasos que debe de realizar nuestro job.
-   **Checkout repository** - Esta acción desprotege su repositorio en $ GITHUB*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
+   **Checkout repository** - Este paso desprotege su repositorio en $ GITHUB*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
    **Linter execution** - Ejecuta el verificador de javascript de nuestro proyecto, configurado en *.eslintrc.js\_.
 
 ```yml
@@ -90,8 +90,8 @@ jobs:
 ```
 
 2. Asignamos los pasos que debe de realizar nuestro job.
-   **Checkout repository** - Esta acción desprotege su repositorio en $ GITHUB*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
-   **Run jest tests** - Esta accion instala las dependencias necesarias para ejecutar el codigo, busca todos los archivos js \*\*.test.js* y los ejecuta para validar que el bingo funciona correctamente.
+   **Checkout repository** - Este paso desprotege su repositorio en $ GITHUB*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
+   **Run jest tests** - Este paso instala las dependencias necesarias para ejecutar el codigo, busca todos los archivos js \*\*.test.js* y los ejecuta para validar que el bingo funciona correctamente.
 
 ```yml
 steps:
@@ -120,8 +120,8 @@ jobs:
 ```
 
 2. Asignamos los pasos que debe de realizar nuestro job.
-   **Checkout repository** - Esta acción desprotege su repositorio en $ GITHUB\*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
-   **Build code** - Esta accion crea el proyecto minificado en la carpeta build.
+   **Checkout repository** - Este paso desprotege su repositorio en $ GITHUB\*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
+   **Build code** - Este paso crea el proyecto minificado en la carpeta build.
    **Generate artifacts** - Esto carga artefactos de su flujo de trabajo, lo que le permite compartir datos entre trabajos y almacenar datos una vez que se completa un flujo de trabajo. (Seleccionamos la carpeta donde esta el proyecto minificado.)
 
 ```yml
@@ -155,10 +155,10 @@ jobs:
 ```
 
 2. Asignamos los pasos que debe de realizar nuestro job.
-   **Artifact download** - Esta accion descarga artefactos de nuestro proyecto minificado del job anterior.
+   **Artifact download** - Este paso descarga artefactos de nuestro proyecto minificado del job anterior.
    **Surge upload** - Despues de descargar los artefactos subimos el proyecto minificado a la surge.hs, le tenemos que especificar la configuracion.
 
-   - domain: Donde vamos a subir nuestro proyecto.
+   - domain: Donde vamos a subir nuestro proyecto
    - project: Los archivos que vamos a subir, en este caso los artefactos.
    - login: El email registrado en surge.sh
    - token: El email generado con surge para validar las subidas.
@@ -210,3 +210,167 @@ siguientes resultados:
 - build_statics_job: resultado asociada
 - deploy_job: resultado asociada
 ```
+
+1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu.
+
+```yml
+jobs:
+  notification_job:
+    name: notification_job
+    runs-on: ubuntu-latest
+```
+
+2. Vamos a decirle a nuestro job que se ejecutara despues de que todos los jobs anteriores hayan acabado, hayan salido bien o mal.
+
+```yml
+needs: [syntax_check_job, test_execution_job, build_statics_job, deploy_job]
+if: ${{ always() }}
+```
+
+3. Asignamos los pasos que debe de realizar nuestro job.
+   **Checkout repository** - Este paso desprotege su repositorio en $ GITHUB\*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
+   **Run action** - Este paso ejecuta el action que vamos a crear, enviara el correo que nos pide la practica. - uses: Ruta donde estara nuestro action.
+   Vamos a pasarle variables de contexto para configurar la libreria de correo. - user: Email del correo de gmail que se logeara para enviar los mails. - pass: Contraseña del email del correo anterior. - email_destination: Dirección de email que recibira el correo. - otros: Son los estados de los jobs anteriores, para que aparezcan en el correo.
+
+```yml
+steps:
+    - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run action
+        uses: ./.github/actions/send_email
+        with:
+          user: ${{ secrets.EMAIL_USERNAME }}
+          pass: ${{ secrets.EMAIL_PASSWORD }}
+          email_destination: ${{ secrets.EMAIL_DESTINATION }}
+          syntax_check_job: ${{ needs.syntax_check_job.outputs.job-status }}
+          test_execution_job: ${{ needs.test_execution_job.outputs.job-status }}
+          build_statics_job: ${{needs.build_statics_job.outputs.job-status}}
+          deploy_job: ${{ needs.deploy_job.outputs.job-status }}
+```
+
+4. Vamos a configurar el action.yml.
+   4.1 Creamos los siguientes directorios _.github/actions/send_mail_
+   4.2 Creamos un archivo action.yml
+   4.3 Establecemos el nombre, la descripcion y añadimos todos los inputs que vamos a utilizar en javascript (Los que enviamos desde el workflow).
+   4.4 Configuramos runs para que ejecute nuestro javascript minifacado.
+
+```yml
+name: "send_email"
+description: "send_email_information"
+
+inputs:
+  user:
+    description: "email_username"
+    required: true
+  pass:
+    description: "email_password"
+    required: true
+  email_destination:
+    description: "email_destination"
+    required: true
+  syntax_check_job:
+    description: "syntax_check_job"
+    required: true
+  test_execution_job:
+    description: "test_execution_job"
+    required: true
+  build_statics_job:
+    description: "build_statics_job"
+    required: true
+  deploy_job:
+    description: "deploy_job"
+    required: true
+
+outputs:
+  message:
+    description: "response_message"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
+```
+
+5. Cremos el proyecto de js para que envie el correo.
+   5.1 Hacemos un _npm init_ en _send_mail_ para inicializar un nuevo proyecto de node.
+   5.2 Instalamos las librerias @actions/core, nodemailer.
+   5.3 Creamos un archivo index.js.
+   5.4 Importamos las librerias
+   5.5 Obtenemos las credenciales
+   5.6 Obtenemos el status de los jobs
+   5.7 Inicializamos la conexion con gmail
+   5.8 Creamos el mensaje
+   5.9 Lo enviamos y mostramos el resultado
+
+```js
+const core = require("@actions/core");
+const nodemailer = require("nodemailer");
+
+// Credentials
+const user = core.getInput("user");
+const pass = core.getInput("pass");
+const email_destination = core.getInput("email_destination");
+
+// Jobs
+const syntax_check_job = core.getInput("syntax_check_job");
+const test_execution_job = core.getInput("test_execution_job");
+const build_statics_job = core.getInput("build_statics_job");
+const deploy_job = core.getInput("deploy_job");
+
+var transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true, // use SSL
+  auth: {
+    user: user,
+    pass: pass,
+  },
+});
+
+const message = {
+  from: user,
+  to: email_destination,
+  subject: "Resultado del workflow ejecutado",
+  html: `
+    <p>Se ha realizado un push en la rama githubActions_improvement que ha provocado la ejecución del workflow Bingo_Workflow con los siguientes resultados:</p>
+    <br>
+    <p>- syntax_check_job: ${
+      syntax_check_job == "" ? "SKIPPED" : syntax_check_job
+    }</p>
+    <p>- test_execution_job: ${
+      test_execution_job == "" ? "SKIPPED" : test_execution_job
+    }</p>
+    <p>- build_statics_job: ${
+      build_statics_job == "" ? "SKIPPED" : build_statics_job
+    }</p>
+    <p>- deploy_job: ${deploy_job == "" ? "SKIPPED" : deploy_job}</p>
+  `,
+  attachments: [],
+};
+
+transporter.sendMail(message, function (err, info) {
+  err ? console.log(err) : console.log(info);
+});
+```
+
+5. Minificamos el proyecto que ejecutara nuestro action con el seguiente comando:
+
+```sh
+ncc build index.js -o dist
+```
+
+Nota: Si no lo tienes instalado
+
+```sh
+npm i -g @vercel/ncc
+```
+
+5. Finalmente vamos a este enlace con la cuenta de google para desactivar el captcha y se puedan enviar correos desde javascript (A los pocos minutos de vuelve a desactivar)
+   https://accounts.google.com/b/0/DisplayUnlockCaptcha
+
+acemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
+
+![Job de despliegue de los estáticos generados](/img/img9.png)
+
+Vamos al correo y comprobamos que recibimos la informacion.
+
+![Job de despliegue de los estáticos generados](/img/img10.png)
