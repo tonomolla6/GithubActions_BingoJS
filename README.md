@@ -80,14 +80,13 @@ Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el 
 Se denominará **test_execution_job**, como en nuestra aplicación del Bingo disponemos de una batería de tests, se
 encargará de ejecutarlos y verificar que todos funcionan como se esperaba.
 
-1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu, esta vez le diremos que sin el job de syntax_check_job no se ejecute.
+1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu.
 
 ```yml
 jobs:
   test_execution_job:
     name: test_execution_job
     runs-on: ubuntu-latest
-    needs: syntax_check_job
 ```
 
 2. Asignamos los pasos que debe de realizar nuestro job.
@@ -104,4 +103,40 @@ steps:
 
 Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
 
-![Job de verificación de sintaxis correcta](/img/img3.png)
+![Job de ejecución de tests](/img/img3.png)
+
+## Job de generación de estáticos
+
+Se denominará **build_statics_job**, este job será el encargado de realizar el proceso de compilado del proyecto. Se realizará siempre que hayan terminado los 2 jobs anteriores y depositará los artefactos generados en la ruta build.
+
+1. Establecemos el nombre del job y le decimos que se inicie en la ultima version de ubuntu, esta vez le diremos que sin el job de syntax_check_job y test_execution_job no se ejecute.
+
+```yml
+jobs:
+  build_statics_job:
+    name: build_statics_job
+    runs-on: ubuntu-latest
+    needs: [syntax_check_job, test_execution_job]
+```
+
+2. Asignamos los pasos que debe de realizar nuestro job.
+   **Checkout repository** - Esta acción desprotege su repositorio en $ GITHUB\*WORKSPACE, para que su flujo de trabajo pueda acceder a él. Solo se obtiene una única confirmación de forma predeterminada.
+   **Build code** - Esta accion crea el proyecto minificado en la carpeta build.
+   **Generate artifacts** - Esto carga artefactos de su flujo de trabajo, lo que le permite compartir datos entre trabajos y almacenar datos una vez que se completa un flujo de trabajo. (Seleccionamos la carpeta donde esta el proyecto minificado.)
+
+```yml
+steps:
+  - name: Checkout code
+    uses: actions/checkout@v2
+  - name: Build code
+    run: npm install; npm run buildDev
+  - name: Generate artifacts
+    uses: actions/upload-artifact@v2
+    with:
+      name: artifact
+      path: ./build
+```
+
+Hacemos un push a la rama que hemos indicado anteriormente y comprobamos que el job se ejecuta correctamente.
+
+![Job de generación de estáticos](/img/img4.png)
