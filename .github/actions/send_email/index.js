@@ -20,7 +20,7 @@ const message = {
   attachments: [],
 };
 
-transport.sendMail(message, function (error, info) {
+transporter.sendMail(message, function (error, info) {
   error
     ? core.setOutput("error", error)
     : core.setOutput("message", info.response);
