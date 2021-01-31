@@ -5,12 +5,8 @@ const user = core.getInput("user");
 const pass = core.getInput("pass");
 const to = core.getInput("to");
 
-console.log(user);
-console.log(pass);
-console.log(to);
-
-core.setOutput("message", user);
-core.setOutput("message", to);
+core.setOutput("message", user + "s");
+core.setOutput("message", to + "s");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
